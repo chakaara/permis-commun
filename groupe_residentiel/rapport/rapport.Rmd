@@ -1,0 +1,894 @@
+---
+title: "Analyse et prédiction des permis de construction en résidentiel"
+subtitle: "Projet tutoré"
+author: Justine Mao, Nikita Gusarov, Tom Viellescazes
+shortauthor: J.Mao, N.Gusarov, T.Viellescazes
+institute: "Université Grenoble Alpes"
+shortinstitute: UGA
+date: "20 février 2019"
+output: 
+    pdf_document:
+        latex_engine: pdflatex
+        # template: Template.tex
+        # slide_level: 2
+        # fonttheme: "structurebold"
+        toc: false
+        # toc_depth: 1
+        df_print: "kable"
+        fig_width: 6
+        fig_height: 3
+        fig_caption: TRUE
+        number_sections: FALSE
+        includes:
+            in_header: packages.sty
+            before_body: toc.sty
+bibliography: references.bib
+fontsize: 11pt
+# geometry: margin = 0.5in
+---
+
+```{r include = FALSE}
+###################
+# Setting r options
+###################
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(size = "tiny")
+# knitr::opts_chunk$set(dev = "pdf")
+knitr::opts_chunk$set(dpi = 600)
+knitr::opts_chunk$set(fig.align = "center") 
+knitr::opts_chunk$set(fig.pos = "!htbp")
+```
+
+```{r include = FALSE}
+###############
+# Load packages
+###############
+# Data mod
+require(tidyverse)
+require(DataCombine)
+# Plot
+require(ggfortify)
+require(gridExtra)
+require(grid)
+# Print
+require(stargazer)
+require(texreg)
+require(xtable)
+# Time series 
+require(tseries)
+require(forecast)
+require(vars)
+# Other
+require(dplyr)
+# require(webshot)
+# require(png)
+# require(magick)
+options(xtable.comment = FALSE)
+```
+
+```{r include = FALSE}
+###################
+# Support functions
+###################
+# Render stargazer caption for tables on top
+bot_caption = function(expr) {
+    # Capture expression
+    x = capture.output(expr)
+    # Parsing
+    cap = grep("\\\\caption", x)
+    lab = grep("\\\\label", x)
+    last = grep("\\\\end\\{table", x)
+    # Paste results
+    cat(paste(c(x[-last], x[cap], x[lab], x[last])[-c(cap, lab)], 
+        collapse = "\n"), "\n")
+}
+```
+
+# Introduction 
+
+```{r include = FALSE}
+##################################################
+################## Introduction ##################
+##################################################
+```
+
+Le marché du bâtiment a une place prépondérante dans l’économie française. Un des premiers secteurs d’activité économique (Gallay, 2017), le secteur du bâtiment et des travaux publics (nommé BTP) disposait d’un chiffre d’affaires s’élevant à 170 milliards d’euros en 2016. La filière du bâtiment devrait voir évoluer sa croissance à la hausse dans les années à venir. Selon une étude de Xerfi, l’institut d’études privé, cette croissance est due d’une part à la rénovation énergétique et d’autre part aux nouveaux programmes immobiliers. Le marché du bâtiment se décompose en trois branches si on se base sur les codes NAF : le marché de la construction spécialisée, le marché de la construction et de la promotion immobilière, le marché du génie civil et des travaux publics. Nous allons ici se pencher sur l’étude de la construction et de la promotion immobilière. Sa part dans le chiffre d’affaires total était de 23.8% en 2016. Cette branche se concentre sur la construction de bâtiments résidentiels et non résidentiels.
+La recherche académique dans le domaine du bâtiment est florissante. De nombreux travaux se sont penchés sur le domaine du BTP notamment dans le résidentiel pour comprendre l’évolution de la construction. Etudier l’évolution des autorisations de chantier nécessite de prendre en compte le contexte macroéconomique afin de limiter tout biais. La Fédération française du bâtiment (2017) ont identifié empiriquement une corrélation entre les variables macroéconomiques et le nombre de permis de construire : plus le taux des obligations assimilables au Trésor à 10 ans (OAT) augmente, plus le nombre de permis de construire est bas, toutes choses égales par ailleurs. Lindh et al. (2002) ajoutent qu’il est important d’étudier aussi l’évolution du PIB. En effet, lorsque la croissance économique du pays augmente, la corrélation devient positive, toutes choses égales par ailleurs. Tandis que l’impact des variables macroéconomiques sur le nombre de permis de construire semble faire l’objet d’un certain consensus, la question sur le lien entre l’âge de la population et le nombre d’autorisations de chantier peut être intéressante à étudier (Essafi et al, 2013). Etant donné l’état actuel de la recherche, l’objectif de notre projet est de comparer nos estimations des nombres de permis de construire dans le résidentiel avec celles trouvées par les cabinets privés.
+	
+De quelle manière peut-on estimer le nombre de permis de construire dans le résidentiel ?
+
+Le marché du bâtiment, spécialement le secteur résidentiel-tertiaire, fait parti des filières qui consomme le plus d’énergie à l’échelle européenne. L’efficacité énergétique des bâtiments est une problématique importante du point de vue de Schneider. Il est donc intéressant ici de se pencher sur l’évolution de la construction afin de trouver des solutions à la crise énergétique.
+Pour analyser la relation entre les variables macroéconomiques et le nombre de permis de construire, le rapport est structuré comme suit. La section II mettra l’accent sur la revue de la littérature. Dans la section III, nous présenterons le plan d’analyse. Les résultats économétriques seront analysés dans la section IV. La conclusion est présentée dans la dernière section.
+
+
+# Présentation de l'entreprise
+
+Présentation de l'entreprise Schneider Electric est une multinationale française de gestion et d'automatisation de l'énergie.
+Acteur majeur de la gestion de l'énergie, il a réalisé 27,7 milliards d'euros de chiffre d'affaires en 2018.
+Elle a été créée en 1838, se manifestant sur le marché de l'acier avant de se réorienter vers le marché de l'électricité qui est devenu son cœur de métier dans les années 80.
+Le groupe diversifie ses activités par différents segments de marché:
+
+- Segment commercial
+    - Bâtiments résidentiels, industriels et commerciaux (40%);
+    - Centres de recherche (14%);
+- Infrastructure et industrie
+    - Industrie (29%);
+    - Entreprises d'infrastructures et d'électricité (17%).
+
+En tant que société multinationale, Schneider Electric est présente dans plus de 100 pays à travers le monde avec plus de 142 milliers d'employés.
+La part du chiffre d'affaires par zone géographique montre une différenciation équilibrée des activités:
+
+- Amérique du Nord (28%);
+- Europe occidentale (27%);
+- Asie-Pacifique (29%);
+- Reste du monde (16%).
+
+Aujourd'hui, les solutions Schneider sont adoptées dans plus de 450 000 systèmes dans le monde.
+Acteur majeur sur le marché des systèmes énergétiques, Schneider contribue au développement durable mondial en se fixant des objectifs élevés afin de préserver notre planète.
+
+# Revue de la litérature économiques
+
+Nous avons commencé notre étude de la littérature par la recherche des articles méthodologiques et théoriques en lien avec le sujet traité. 
+
+
+Les ressources informatiques offertes par notre établissement (Université Grenoble Alpes) aussi bien que d'autres sources en libre accès nous ont permis de rechercher les articles d'intérêt. 
+Les moteurs de recherche scientifique les plus utilisés ont été :
+- Science Direct 
+- Google Scholar 
+- Elsevier 
+- SAGE journals 
+Ces outils informatiques nous ont permis de sélectionner les articles les plus pertinents selon le nombre des citations des articles.
+
+```{r include = FALSE}
+########################################################
+################## Revu de la litérat ##################
+########################################################
+```
+
+## Synthèse
+
+Les caractéristiques générales de l’économie et de la société peuvent influencer l’évolution des permis de construire dans le résidentiel. Avant d’aller plus loin, il n’est sans doute pas inutile de rappeler en quelques mots ce que l’on entend généralement par le mot permis de construire. Un permis de construire est “un document administratif qui donne les moyens à l’administration de vérifier qu’un projet de construction respecte bien les règles d’urbanisme en vigueur. Ce document obligatoire pour les travaux de grande importance ne doit porter que sur les biens immobiliers” (Walscheid). Plusieurs facteurs déterminent le macro-environnement des permis de construire tels que les facteurs économiques (croissance économiques, chômage), les facteurs démographiques (l’évolution de la pyramide des âges) ainsi que les facteurs politiques et légaux. De nombreux travaux ont cherché à faire un état des lieux sur le nombre des autorisations de chantier dans le résidentiel. Ils vont nous permettre de nous aiguiller sur le choix des variables, leur unité ainsi que la méthode économétrique à appliquer.
+
+\newpage
+
+\begin{longtable}{p{5cm} | p{5cm} | p{5cm}}
+\\[-1.8ex]
+\hline \\[-1.8ex]
+\textbf{Variables explicatives possibles} &
+    \textbf{Pourquoi ? Théories} & 
+        \textbf{Effet attendu sur la variable dépendante} \\
+\hline \\[-1.8ex]
+Nombre de permis de construire des logements décalé d’un trimestre (Fédération française du bâtiment, 2017) &
+    L’évolution des permis de construire décalée d’un trimestre ne devrait pas changer soudainement d’un trimestre à un autre. Si le nombre d’autorisations de chantier décalé d’un trimestre augmente, on s’attend à ce que le nombre de permis de construire augmente par la suite, toutes choses égales par ailleurs. & 
+        Effet positive \\
+\hline \\[-1.8ex]
+Taux de l’OAT à 10 ans décalé de deux trimestres (Fédération française du bâtiment, 2017) & 
+    Si le taux de l’OAT augmente, les taux des crédits immobiliers le seront également. Les individus vont moins recourir à des crédits ce qui par la suite conduit à une baisse de la construction des bâtiments. Le nombre de permis de construire va donc diminuer. &
+        Effet négative \\
+\hline \\[-1.8ex]
+Taux de chômage décalé de deux trimestres (Fédération française du bâtiment, 2017) & 
+    Si le taux de chômage augmente d’1%, les individus possèdent moins d’argent et n’ont pas forcément la possibilité d’acheter un nouvel appartement. Le nombre de permis de construire devrait donc diminuer, toutes choses égales par ailleurs. & 
+        Effet négative \\
+\hline \\[-1.8ex]
+Délai d’écoulement de l’encours de logements en trimestre de ventes décalés d’un trimestre (Fédération française du bâtiment, 2017) & 
+    Plus le délai du crédit accordé à un client pour l’achat d’un logement s’allonge, plus le nombre de permis de construire va diminuer. En effet, les individus vont d’abord finir de rembourser leur crédit avant d’acheter un nouvel appartement. Plus ils tardent à rembourser, moins il y aura de demandes sur le marché de l’immobilier. & 
+        Effet négative \\
+\hline \\[-1.8ex]
+Mesure politique & 
+    La loi de finances a diminué les recettes des bailleurs sociaux ce qui par la suite, a aussi entraîné une baisse de l’investissement dans la construction de bâtiments neufs. Cela signifie en d’autres termes une baisse des autorisations de chantier, toutes choses égales par ailleurs. & 
+        Effet positive ou négative selon la politique mise en place. \\
+\hline \\[-1.8ex]
+Âge de la population (Lindh et al, 2008) &
+    Cela peut s’expliquer par un modèle de demande de cycle de vie en forme de bosse au cours de l’âge. Le taux de mortalité en augmentation à cet âge là constitue une partie importante de l’explication. Compte tenu du vieillissement rapide de la population dans les pays industrialisés, on peut s’attendre à une baisse des autorisations de chantier. & 
+        Un effet positive pour les individus âgés entre 20 et 59 ans (Institut national d’études démographiques, 2019). Un effet négative pour les individus âgés de plus de 75 ans. \\
+\hline \\[-1.8ex]
+Prix de l’immobilier (Essai et al, 2015) &
+    Celui-ci peut influencer indirectement le nombre de permis de construire. En effet, si le prix de l’immobilier augmente, les individus seront moins enclins à acheter des appartements. On peut s’attendre par la suite à ce que le nombre de permis de construire diminue. &
+        Effet négative \\
+\hline \\[-1.8ex]
+PIB (Lindh et al, 2002) & 
+    Plus la croissance est forte, plus le pays est riche. Les salaires des individus augmentent et vont se mettre à plus consommer. La demande de nouveaux logements augmente ainsi que les permis de construire. & 
+        Effet positive. \\
+\hline \\[-1.8ex]
+\caption{Tableau récapitulatif des variables explicatives possibles du modèle}
+\end{longtable}
+
+
+From https://www.sciencedirect.com/science/article/abs/pii/S0164070407000997 (Policy implications => find monetary chocs) : @galbraith2007forecasting
+
+Overall, the results indicate that housing starts and residential investment respond negatively to contractionary monetary policy shocks. However, the magnitude of the impact is sensitive to the selection of the horizon for which the restrictions hold. Moreover, a comparison of the results with those obtained from a conventional Choleski decomposition, suggests that the impact of monetary policy on the housing market is much less certain under the sign restrictions approach.
+
+From https://www.sciencedirect.com/science/article/abs/pii/S0094119012000575 (housing driven buiseness cycle) :
+
+building permits significantly lead economic activity in nearly all US states over the past three decades, and produce substantially more accurate out-of-sample forecasts of state-level job and income growth than other traditional indicators including the leading indicator index, housing prices and wealth. 
+housing reflects expectations of future economic activity as permits are closely related to movements in consumer expectations, and both lead the business cycle by four quarters. 
+
+From https://ideas.repec.org/p/bca/bocawp/05-41.html :
+
+The long-run relationship between expenditure and its determinants is shown to have shifted during the late 1970s, which implies that important changes have occurred in how the housing market is driven. 
+The author finds that the response of housing investment to interest rates has become more pronounced over time. 
+He compares out-of-sample forecasts from linear and non-linear cointegration models (which make use of information on fundamentals such as wealth and demographics) with forecasts from simple leading-indicator models (which exploit information such as housing starts or household indebtedness). 
+The author finds that simple leading-indicator models can provide relatively accurate near-term forecasts. 
+The preferred structural model, which allows for a shift in the cointegrating vector, provides a rich analysis of the housing sector, with good forecast accuracy on the construction side but not on the resale side, which is more difficult to predict.
+
+
+# Plan d'analyse
+
+## Création d'une base de données
+
+Notre étude porte sur des données annuelles afin d'obtenir des résultats sur le long terme.
+
+Pour tester notre modèle économique, nous allons utiliser plusieurs variables.
+La variable d'intérêt est le nombre de logements autorisés à la construction dans le résidentiel en nombre de logements.
+Les variables explicatives sont le PIB (en millions d'euros que nous transformerons par la suite en indice base 1994), le taux d'inflation (en indice base 1994), la part de la population par âge (âge), les politiques publiques instaurées ainsi que l'année (variable binaire qui prendra 1 lorsque nous étudierons cette année sinon 0).
+
+L'étude à réaliser est dynamique puisque les données varient d'une année à une autre.
+
+
+Pour la collecte de nos données, nous nous sommes appuyés de plusieurs sources : Eurostat, Data.gouv ainsi que l'Insee.
+Eurostat est un fournisseur de statistiques qui exploite des données à l'échelle européenne. Il ne collecte pas les données mais les vérifie afin de veiller à leur comparabilité. Les chiffres sur Eurostat nous ont permis d'avoir des données sur le secteur de la construction.
+Data.gouv.fr est une "plateforme de diffusion de données publiques" en France. Nous pouvons retrouver sur cette plateforme les bases de données Sitadel2 qui recensent les permis de construire.
+L'Insee produit, analyse et publie les données statistiques en France. Il nous a permis de disposer des informations sur les variables macro-économiques ainsi que les taux d'intérêt.
+
+# Methodologie
+
+```{r include = FALSE}
+########################################################
+##################### Methodologie #####################
+########################################################
+```
+
+## Les prédictions et les limitations
+
+From https://ideas.repec.org/a/aea/jecper/v12y1998i2p175-92.html#author-abstract :
+
+Broadly defined, macroeconomic forecasting is alive and well. Nonstructural forecasting, which is based largely on reduced-form correlations, has always been well and continues to improve. 
+Structural forecasting, which aligns itself with economic theory and hence rises and falls with theory, receded following the decline of Keynesian theory. 
+In recent years, however, powerful new dynamic stochastic general equilibrium theory has been developed and structural macroeconomic forecasting is poised for resurgence.
+
+From Bank of Canada Working Paper 2007, 1, https://www.econstor.eu/handle/10419/53936 :
+
+For stationary transformations of variables, there exists a maximum horizon beyond which forecasts can provide no more information about the variable than is present in the unconditional mean. 
+Meteorological forecasts, typically excepting only experimental or exploratory situations, are not reported beyond this horizon; by contrast, little generally accepted information about such maximum horizons is available for economic variables. 
+The authors estimate such content horizons for a variety of economic variables, and compare these with the maximum horizons that they observe reported in a large sample of empirical economic forecasting studies. 
+The authors find that many published studies provide forecasts exceeding, often by substantial margins, their estimates of the content horizon for the particular variable and frequency. 
+The authors suggest some simple reporting practices for forecasts that could potentially bring greater transparency to the process of making and interpreting economic forecasts.
+
+```{r include = FALSE}
+# Données ménsuelles 
+
+########################################################
+################## Monthly data study ##################
+########################################################
+```
+
+```{r include = FALSE}
+# Données annuelles
+
+#######################################################
+################## Annual data study ##################
+#######################################################
+```
+
+# Données
+
+```{r include = FALSE}
+##########################
+# Presentation des données 
+##########################
+```
+
+Notre étude porte à la fois sur les données annuelles et mensuelles, ce qui vise d'enrichir et raffiner notre analyse par une exploration des interactions du court et long terme. 
+Néanmoins, suivant le contexte de notre étude, ainsi bien que les demandes du commanditaire, nous allons nous focaliser surtout sur les données annuelles, car Schnieder Electrics est intéressé par des résultats ayant une valeur stratégique au long terme. 
+
+Notre base des données regroupe des indices macroéconomiques provenant de plusieurs sources français et internationaux. 
+Parmi lesquels : 
+
+- Eurostat ;
+- Base des données gouvernementale Sit@del2 ;
+- Insee.
+
+Les variables récupérées de ces base des données sont : 
+
+- Nombre des logements autorisés à la construction, 
+- La surface autorisée à la construction, 
+- Produit intérieur brut,
+- Taux d'inflation,
+- Données sur les parts de la population par âge,
+- Données sur les politiques publiques mises en place.
+
+```{r include = FALSE}
+# Data
+ydata = read.csv("../data/derived_data/df3.csv")[,-c(1:2)] %>%
+    dplyr::select(year = annee, 
+        PIB, 
+        TdI = Taux_interet, 
+        DCF_men = DepCF_men, 
+        FBCF_men,
+        T_NL = total_nombre_de_logements,
+        T_SM = total_surface_en_m2)
+ddata = read.csv("../data/derived_data/demographie.csv") %>%
+    dplyr::select(total = France,
+        moins20 = Em20,
+        mid20_59 = E20_59,
+        plus60 = E60p) %>%
+    mutate(moins20 = moins20/total*100,
+        mid20_59 = mid20_59/total*100,
+        plus60 = plus60/total*100) %>%
+    dplyr::select(moins20, 
+        mid20_59, 
+        plus60)
+ydata = cbind(ydata, ddata[-26,])
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Statistiques déscriptives : full
+bot_caption(stargazer(ydata, 
+    summary = TRUE, 
+    header = FALSE,
+    nobs = FALSE,
+    covariate.labels = c(
+        "Année",
+        "PIB",
+        "Taux d'intérêt",
+        "Depences des ménages",
+        "Investissements des ménages",
+        "Nombre des logements autorisé",
+        "Mettres quarrés autorisés",
+        "Population < 20 ans",
+        "Population 20-59 ans",
+        "Population > 60 ans"),
+    omit.summary.stat = c("p25", "p75"),
+    title = "Statistiques déscriptives pour les données annuelles"))
+```
+
+\FloatBarrier
+
+## Transformation des données
+
+Afin de pouvoir traiter les données recueillis nous devons les rapporter à une échelle commune afin d'éviter les biais éventuelles liées à la présence d'héterockedacité.
+Nous ajustons les données en les ramenant à la base de 1994. 
+C'est-à-dire, nous construisons des indice pour toutes les séries temporelles.
+
+```{r include = FALSE}
+# Relative transformation
+r_ydata = ydata %>%
+    mutate(t = year - min(year),
+        rPIB = PIB/ydata[ydata$year == 1994, ]$PIB,
+        rTdI = TdI/ydata[ydata$year == 1994, ]$TdI,
+        rDCFmen = DCF_men/ydata[ydata$year == 1994, ]$DCF_men,
+        rFBCFmen = FBCF_men/ydata[ydata$year == 1994, ]$FBCF_men,
+        rTNL = T_NL/ydata[ydata$year == 1994, ]$T_NL,
+        rT_SM = T_SM/ydata[ydata$year == 1994, ]$T_SM,
+        rmoins20 = moins20/ydata[ydata$year == 1994, ]$moins20,
+        rmid2059 = mid20_59/ydata[ydata$year == 1994, ]$mid20_59,
+        rplus60 = plus60/ydata[ydata$year == 1994, ]$plus60) %>%
+    dplyr::select(t, rPIB, rTdI, 
+        rDCFmen, rFBCFmen, 
+        rTNL,
+        rmoins20, rmid2059, rplus60, 
+        rT_SM)
+```
+
+Les statistiques descriptives pour les données transformées sont présentés dans le tableau suivant :
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Statistiques déscriptives
+bot_caption(stargazer(r_ydata, 
+    summary = TRUE, 
+    header = FALSE,
+    nobs = FALSE,
+    omit.summary.stat = c("p25", "p75"),
+    covariate.labels = c(
+        "Année",
+        "PIB",
+        "Taux d'intérêt",
+        "Depences des ménages",
+        "Investissements des ménages",
+        "Nombre des logements autorisé",
+        "Population < 20 ans",
+        "Population 20-59 ans",
+        "Population > 60 ans",
+        "Mettres quarrés autorisés"),
+    title = "Statistiques déscriptives pour les données annuelles transorfmées"))
+```
+
+\FloatBarrier
+
+## Présentation graphique
+
+Afin de pouvoir mieux comprendre le comportement des différents séries temporelles nous pouvons visualiser nos données. 
+Cette représentation devra nous donner une intuition sur les problèmes éventuelles (telles que la non-stationnarité).
+
+```{r include = FALSE}
+# Time data
+sr_ydata = r_ydata
+colnames(sr_ydata) = c(
+        "Année",
+        "PIB",
+        "Taux d'intérêt",
+        "Depences des ménages",
+        "Investissements des ménages",
+        "Nombre des logements autorisé",
+        "Population < 20 ans",
+        "Population 20-59 ans",
+        "Population > 60 ans",
+        "Mettres quarrés autorisés")
+tr_ydata = ts(r_ydata, start = 1994, frequency = 1)
+str_ydata = ts(sr_ydata, start = 1994, frequency = 1)
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Les données originales"}
+# Plots
+str_ydata[, -1] %>% 
+    autoplot(facets = F)
+```
+
+\FloatBarrier
+
+Puisque nous faisons face à des séries chronologiques annuelles nous évitons les obstacles imposées par la structure saisonnière des données. 
+Néanmoins, un nombre d'observation faible, ainsi que la présence des tendances temporelles nous complexifient notre analyse. 
+
+## Analyse de la correlation 
+
+### Analyse simple 
+
+Nous allons commencer par une presentation simple etudiant la corremation entre les variables étudiées sans prendre en compte les decalages temporaires.
+
+### Analyse des corrélations croisées
+
+D'ici nous introduisons dans notre analyse la notion des liens causales dans le temps.
+Afin de pouvoir capter les rélations sous-jacents dans nos données nous allons étudier les correlations croisées entre les variables identifiées.
+
+Toutefois, avant d'utiliser cette téchnique nous devons nous assurer sur la stationnaritée des séries étudiées.
+Afin de reussir dans cette tache, nous effectuons deux tests : 
+
+- test de Dickey-Fuller augmenté (ADF), qui permet de tester l'hypothèse de la non-stationnarité d'une série temporelle ;
+- test de Kwiatkowski-Phillips-Schmidt-Shin (KPSS) pour vérifier la stationnarité sur trend (KPSS-T) ou niveau (KPSS-L).
+
+Ces deux tests nous permettent de vérifier l'hypothèse de la staionnarité des séries étudiées et, si besoin, la corriger en appliquant une transformation sur la série en question.
+
+```{r include = FALSE}
+# Testing
+ftest = data.frame("ADF" = NA, "KPSS-T" = NA, "KPSS-L" = NA)
+# ADF test
+for (i in 2:(ncol(tr_ydata)-1)) {
+    ftest[i-1, 1] = adf.test(na.omit(tr_ydata[,i]))$p.val
+}
+for (i in 2:(ncol(tr_ydata)-1)) {
+    ftest[i-1, 2] = kpss.test(na.omit(tr_ydata[,i]),
+        null = "Trend")$p.val
+}
+for (i in 2:(ncol(tr_ydata)-1)) {
+    ftest[i-1, 3] = kpss.test(na.omit(tr_ydata[,i]),
+        null = "Level")$p.val
+}
+rownames(ftest) = c("PIB",
+    "Taux d'inflation",
+    "Depences des ménages",
+    "Investissements des ménages",
+    "Nombre des logements autorisé",
+    "Population < 20 ans",
+    "Population 20-59 ans",
+    "Population > 60 ans")
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Results
+print(xtable(ftest,
+    caption = "Tests de la stationnaritée, p-valeurs"),
+    caption.placement = "bottom")
+```
+
+\FloatBarrier
+
+Les résultats obtenus pour le test de Dickey-Fuller nous permetent rejeter l'hypothèse de la stationnarité des séries temporelles en question.
+De même, selon les résultats d'autre test (KPSS) nous devons rejeter l'hypothèse de stationnarité soit sur trend, soit sur niveau pour l'ensemble des données.
+
+Nous observons dans nos données (graphique X) que les séries temporelles n'oscille pas autour du zero, ce qui, tenant compte des résultats des tests, nous amêne à l'idée que nos séries sont stationnaires en differences. 
+Cela nous amêne à des séries résultantes suivantes :
+
+```{r include = FALSE}
+# Data transformation
+tr_ydata_diff = diff(tr_ydata)
+str_ydata_diff = diff(str_ydata)
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Les données differenciées"}
+# Plots
+str_ydata_diff[, -1] %>% 
+    autoplot()
+```
+
+\FloatBarrier
+
+Vérifions si ces séries sont stationnaires.
+Effectuons les tests, qu'on a déjà utilisé :
+
+```{r include = FALSE}
+# Testing
+ftest_diff = data.frame("ADF" = NA, "KPSS-T" = NA, "KPSS-L" = NA)
+# ADF test
+for (i in 2:(ncol(str_ydata_diff)-1)) {
+    ftest_diff[i-1, 1] = adf.test(na.omit(str_ydata_diff[,i]))$p.val
+}
+for (i in 2:(ncol(str_ydata_diff)-1)) {
+    ftest_diff[i-1, 2] = kpss.test(na.omit(str_ydata_diff[,i]),
+        null = "Trend")$p.val
+}
+for (i in 2:(ncol(str_ydata_diff)-1)) {
+    ftest_diff[i-1, 3] = kpss.test(na.omit(str_ydata_diff[,i]),
+        null = "Level")$p.val
+}
+rownames(ftest_diff) = c("PIB",
+    "Taux d'inflation",
+    "Depences des ménages",
+    "Investissements des ménages",
+    "Nombre des logements autorisé",
+    "Population < 20 ans",
+    "Population 20-59 ans",
+    "Population > 60 ans")
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Results
+print(xtable(ftest_diff,
+    caption = "Tests de la stationnaritée en differences, p-valeurs"),
+    caption.placement = "bottom")
+```
+
+\FloatBarrier
+
+Dans ce cas, nous obtenons des résultats satisfaisants au moins pour un certain nombre des séries étudiées.
+Ce qui est le plus importent, c'est que la série principale décrivant l'evolution du nombre des logements autorisé est stationnaire en prémiers differences.
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.height = 4, fig.cap = "Corremogrammes croisées"}
+# Data choice
+par(mfrow = c(2,2), cex = 0.3)
+ccf(str_ydata_diff[,2], str_ydata_diff[,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "PIB",
+    ylab = "Correlation croisé",
+    ylim = c(-1,1),
+    cex = 0.3)
+ccf(str_ydata_diff[,3], str_ydata_diff[,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Taux d'intérêt",
+    ylab = "Correlation croisé",
+    ylim = c(-1,1),
+    cex = 0.3,
+    na.action = na.pass)
+ccf(str_ydata_diff[,4], str_ydata_diff[,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Dépences des ménages",
+    ylab = "Correlation croisé",
+    ylim = c(-1,1),
+    cex = 0.3)
+ccf(str_ydata_diff[,5], str_ydata_diff[,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Investissements des ménages",
+    ylab = "Correlation croisé",
+    ylim = c(-1,1),
+    cex = 0.3)
+```
+
+\FloatBarrier
+
+Nous observons, que pour l'ensemble des données on n'arrive pas capter les liens causales, car la correlation observé sur notre échantillon est plus forte au temps 0 (en abcense du décalage temporaire entre les deux séries dans chaque cas).
+
+Il existe en même temps une faible correlation négative entre le taux d'interêt décalé et le nombre des logements autorisé.
+C'est-à-dire, une augmentation du taux d'intérêt risque d'entrainer une baisse dans le nobmre des autorisations de construction (il faut ne pas oublier qu'ici on parle des valeurs differenciées et pas des nombres réels).
+D'utre coté, l'augmentation des autorisations à construire entraine une hausse de PIB (dans ce cas la correlation observée est trop faible, mais significative tout de même).
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.height = 4, fig.cap = "Corremogrammes croisées"}
+# Data choice
+par(mfrow = c(2,2))
+ccf(str_ydata_diff[,7], str_ydata_diff[,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Population < 20 ans",
+    ylab = "Correlation croisé",
+    ylim = c(-1,1),
+    cex = 0.3)
+ccf(str_ydata_diff[,8], str_ydata_diff[,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Population 20-59 ans",
+    ylab = "Correlation croisé",
+    ylim = c(-1,1),
+    cex = 0.3,
+    na.action = na.pass)
+ccf(str_ydata_diff[,9], str_ydata_diff[,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Population > 60 ans",
+    ylab = "Correlation croisé",
+    ylim = c(-1,1),
+    cex = 0.3)
+```
+
+\FloatBarrier
+
+Nous observons une forte correlation entre le nombre des logements autorisé à la construction dans le secteur privé et la part de la population mineur de 20 ans, ce qui s'explique par l'idée des cycles de vie, qui apparait dans un des articles étudiées.
+
+## Autocorrelation 
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.height = 4, fig.cap = "Corremogrammes croisées"}
+# Data choice
+par(mfrow = c(2,2))
+acf(str_ydata_diff[,2], 
+    main = "PIB",
+    ylim = c(-1,1),
+    cex = 0.3)
+acf(str_ydata_diff[,3], 
+    main = "Taux d'intérêt",
+    ylim = c(-1,1),
+    cex = 0.3,
+    na.action = na.pass)
+acf(str_ydata_diff[,4],
+    main = "Dépences des ménages",
+    ylim = c(-1,1),
+    cex = 0.3)
+acf(str_ydata_diff[,5], 
+    main = "Investissements des ménages",
+    ylim = c(-1,1),
+    cex = 0.3)
+```
+
+\FloatBarrier
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.height = 4, fig.cap = "Corremogrammes croisées"}
+# Data choice
+par(mfrow = c(2,2))
+acf(str_ydata_diff[,7],
+    main = "Population < 20 ans",
+    ylim = c(-1,1),
+    cex = 0.3)
+acf(str_ydata_diff[,8],
+    main = "Population 20-59 ans",
+    ylim = c(-1,1),
+    cex = 0.3,
+    na.action = na.pass)
+acf(str_ydata_diff[,9],
+    main = "Population > 60 ans",
+    ylim = c(-1,1),
+    cex = 0.3)
+```
+
+\FloatBarrier
+
+## Autocorrelation partielle
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.height = 4, fig.cap = "Corremogrammes croisées"}
+# Data choice
+par(mfrow = c(2,2))
+pacf(str_ydata_diff[,2], 
+    main = "PIB",
+    ylim = c(-1,1),
+    cex = 0.3)
+pacf(str_ydata_diff[,3], 
+    main = "Taux d'intérêt",
+    ylim = c(-1,1),
+    cex = 0.3,
+    na.action = na.pass)
+pacf(str_ydata_diff[,4],
+    main = "Dépences des ménages",
+    ylim = c(-1,1),
+    cex = 0.3)
+pacf(str_ydata_diff[,5], 
+    main = "Investissements des ménages",
+    ylim = c(-1,1),
+    cex = 0.3)
+```
+
+\FloatBarrier
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.height = 4, fig.cap = "Corremogrammes croisées"}
+# Data choice
+par(mfrow = c(2,2))
+pacf(str_ydata_diff[,7],
+    main = "Population < 20 ans",
+    ylim = c(-1,1),
+    cex = 0.3)
+pacf(str_ydata_diff[,8],
+    main = "Population 20-59 ans",
+    ylim = c(-1,1),
+    cex = 0.3,
+    na.action = na.pass)
+pacf(str_ydata_diff[,9],
+    main = "Population > 60 ans",
+    ylim = c(-1,1),
+    cex = 0.3)
+```
+
+\FloatBarrier
+
+# Modèlisation 
+
+```{r include = FALSE}
+##############
+# Linear model 
+##############
+```
+
+Dans cette partie nous allons discuter des différents approches à la prédiction de nombre des logement autorisé à la construction. 
+A l'aide de plusieurs modèles intermédiaires nous allons démontrer la meilleure façon à traiter la problématique.
+
+...
+
+# Annexes
+
+## A Modèles économétriques simples
+
+Dans cette partie de travail nous allons explorer préalablement les liens éventuels entre nos variables par construction d'une régression simple.
+
+```{r include = FALSE}
+# Formulas
+formulas = list()
+formulas[[1]] = rTNL ~ rPIB
+formulas[[2]] = rTNL ~ rPIB + rDCFmen + rFBCFmen
+formulas[[3]] = rTNL ~ rPIB + rTdI
+formulas[[4]] = rTNL ~ rPIB + rDCFmen + rFBCFmen + rTdI
+formulas[[5]] = rTNL ~ rPIB + rDCFmen + rFBCFmen + rTdI + t
+``` 
+
+```{r include = FALSE}
+# Modélisation OLS
+ols = list()
+ols[[1]] = lm(formulas[[1]], r_ydata)
+ols[[2]] = lm(formulas[[2]], r_ydata)
+ols[[3]] = lm(formulas[[3]], r_ydata)
+ols[[4]] = lm(formulas[[4]], r_ydata)
+ols[[5]] = lm(formulas[[5]], r_ydata)
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Resultats
+texreg(float.pos = "!htbp", 
+    ols, 
+    custom.coef.map = list(
+        "rPIB" = "PIB",
+        "rlDFCmen" = "DFCmen",
+        "rTdI" = "Taux d'interet",
+        "rFBCFmen" = "FBCFmen",
+        "t" = "Temps"),
+    caption = "Comparaison des modèles differents")
+```
+
+\FloatBarrier 
+
+## B Modéles temporelles simples 
+
+```{r include = FALSE}
+####################
+# Time series models 
+####################
+```
+
+```{r include = FALSE}
+# Resultats
+tsTNL = diff(ts(r_ydata$rTNL, start = 1994, frequency = 1))
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Graphiques déscriptives 1"}
+# Graphiques 
+tsTNLX = tsTNL - mean(tsTNL)
+p1 = autoplot(tsTNL) + 
+    ylab("Changement rélatif du nombre des logements autorisés")
+tsTNLd = diff(tsTNL, lag = 1, difference = 1)
+p2 = autoplot(tsTNLd) + 
+    ylab("Delta de changement rélatif du nombre des logements autorisés")
+grid.arrange(p1, p2, nrow = 1)
+```
+
+\FloatBarrier
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Graphiques déscriptives 2"}
+# Graphiques 
+p1 = ggAcf(tsTNLX) +
+        ggtitle("ACF") +
+        xlab("Lag")
+p2 = ggPacf(tsTNLX) +
+        ggtitle("PACF") +
+        xlab("Lag")
+grid.arrange(p1, p2, nrow = 1)
+```
+
+\FloatBarrier
+
+```{r include = FALSE}
+tsarma = list()
+tsarma[[1]] = arima(tsTNL, order = c(1, 0, 0))
+tsarma[[2]] = arima(tsTNL, order = c(0, 0, 1))
+tsarma[[3]] = arima(tsTNL, order = c(1, 0, 1))
+tsarma[[4]] = arima(tsTNL, order = c(1, 0, 2))
+tsarma[[5]] = arima(tsTNL)
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Resultats
+texreg(float.pos = "!htbp", 
+    tsarma, 
+    caption = "Comparaison des modèles ARMA")
+```
+
+\FloatBarrier
+
+## Modèles temporelles de type VAR
+
+```{r include = FALSE}
+####################
+# Time series models 
+####################
+```
+
+```{r include = FALSE}
+# Data 
+var_data = tr_ydata_diff[-nrow(tr_ydata_diff), -c(1, 10)]
+# Models 
+tsvar = list()
+tsvar[[1]] = VAR(var_data, p = 1, 
+    type = "both")
+tsvar[[2]] = VAR(var_data, p = 2, 
+    type = "both")
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Resultats
+texreg(float.pos = "!htbp", 
+    tsvar[[1]]$varres, 
+    caption = "Résultat de VAR(1)")
+```
+
+\FloatBarrier
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Resultats
+texreg(float.pos = "!htbp", 
+    tsvar[[2]]$varres, 
+    caption = "Résultat de VAR(2)")
+```
+
+\FloatBarrier
+
+# References

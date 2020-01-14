@@ -1,0 +1,2144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:adms="http://www.w3.org/ns/adms#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dctype="http://purl.org/dc/dcmitype/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns="http://dd.eionet.europa.eu/property/" xml:base="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/">
+<skos:ConceptScheme rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/">
+<rdfs:label>Indicator</rdfs:label>
+<skos:notation>indic</skos:notation>
+<dcterms:isPartOf rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/"/>
+</skos:ConceptScheme>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP010">
+<skos:notation>BP010</skos:notation>
+<skos:prefLabel>Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP020">
+<skos:notation>BP020</skos:notation>
+<skos:prefLabel>Trade in goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP030">
+<skos:notation>BP030</skos:notation>
+<skos:prefLabel>Trade in services</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP040">
+<skos:notation>BP040</skos:notation>
+<skos:prefLabel>Income</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP050">
+<skos:notation>BP050</skos:notation>
+<skos:prefLabel>Current transfers</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP060">
+<skos:notation>BP060</skos:notation>
+<skos:prefLabel>Capital account - Millions of euro - Monthly data</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP070">
+<skos:notation>BP070</skos:notation>
+<skos:prefLabel>Current and capital account - Millions of euro - Monthly data</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP080">
+<skos:notation>BP080</skos:notation>
+<skos:prefLabel>Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP090">
+<skos:notation>BP090</skos:notation>
+<skos:prefLabel>Direct investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP100">
+<skos:notation>BP100</skos:notation>
+<skos:prefLabel>Portfolio investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP110">
+<skos:notation>BP110</skos:notation>
+<skos:prefLabel>Financial derivatives</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP120">
+<skos:notation>BP120</skos:notation>
+<skos:prefLabel>Other investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP130">
+<skos:notation>BP130</skos:notation>
+<skos:prefLabel>Reserves assets</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP140">
+<skos:notation>BP140</skos:notation>
+<skos:prefLabel>Net errors and omissions</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP200">
+<skos:notation>BP200</skos:notation>
+<skos:prefLabel>Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP210">
+<skos:notation>BP210</skos:notation>
+<skos:prefLabel>Trade in goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP220">
+<skos:notation>BP220</skos:notation>
+<skos:prefLabel>Trade in services</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP230">
+<skos:notation>BP230</skos:notation>
+<skos:prefLabel>Income</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP240">
+<skos:notation>BP240</skos:notation>
+<skos:prefLabel>Current transfers</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-100">
+<skos:notation>BP-100</skos:notation>
+<skos:prefLabel>Trade in goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-200">
+<skos:notation>BP-200</skos:notation>
+<skos:prefLabel>Trade in services</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-300">
+<skos:notation>BP-300</skos:notation>
+<skos:prefLabel>Income</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-379">
+<skos:notation>BP-379</skos:notation>
+<skos:prefLabel>Current transfers</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-993">
+<skos:notation>BP-993</skos:notation>
+<skos:prefLabel>Current account</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-994">
+<skos:notation>BP-994</skos:notation>
+<skos:prefLabel>Capital account</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-010">
+<skos:notation>BP-010</skos:notation>
+<skos:prefLabel>Current and capital account</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-995">
+<skos:notation>BP-995</skos:notation>
+<skos:prefLabel>Financial account</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-500">
+<skos:notation>BP-500</skos:notation>
+<skos:prefLabel>Direct investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-600">
+<skos:notation>BP-600</skos:notation>
+<skos:prefLabel>Portfolio investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-910">
+<skos:notation>BP-910</skos:notation>
+<skos:prefLabel>Financial derivatives</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-700">
+<skos:notation>BP-700</skos:notation>
+<skos:prefLabel>Other investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-802">
+<skos:notation>BP-802</skos:notation>
+<skos:prefLabel>Reserves assets</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP-998">
+<skos:notation>BP-998</skos:notation>
+<skos:prefLabel>Net errors and omissions</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-IPT">
+<skos:notation>BS-IPT</skos:notation>
+<skos:prefLabel>Production development observed over the past 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-IEME">
+<skos:notation>BS-IEME</skos:notation>
+<skos:prefLabel>Employment expectations over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-IOB">
+<skos:notation>BS-IOB</skos:notation>
+<skos:prefLabel>Assessment of order-book levels</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-IEOB">
+<skos:notation>BS-IEOB</skos:notation>
+<skos:prefLabel>Assessment of export order-book levels</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-ISFP">
+<skos:notation>BS-ISFP</skos:notation>
+<skos:prefLabel>Assessment of the current level of stocks of finished products</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-IPE">
+<skos:notation>BS-IPE</skos:notation>
+<skos:prefLabel>Production expectations over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-ISPE">
+<skos:notation>BS-ISPE</skos:notation>
+<skos:prefLabel>Selling price expectations over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-ICI">
+<skos:notation>BS-ICI</skos:notation>
+<skos:prefLabel>Industrial confidence indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-ICPC-BAL">
+<skos:notation>BS-ICPC-BAL</skos:notation>
+<skos:prefLabel>Assessment of current production capacity</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-IPCO-BAL">
+<skos:notation>BS-IPCO-BAL</skos:notation>
+<skos:prefLabel>Duration of production assured by current order-books, months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-INO-BAL">
+<skos:notation>BS-INO-BAL</skos:notation>
+<skos:prefLabel>New orders in recent months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-IEE-BAL">
+<skos:notation>BS-IEE-BAL</skos:notation>
+<skos:prefLabel>Export expectations for the months ahead</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-ICU-PC">
+<skos:notation>BS-ICU-PC</skos:notation>
+<skos:prefLabel>Current level of capacity utilization (%)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CP3M-DM-BAL">
+<skos:notation>BS-CP3M-DM-BAL</skos:notation>
+<skos:prefLabel>Competitive position over the past 3 months: on the domestic market</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CP3M-FMIEU-BAL">
+<skos:notation>BS-CP3M-FMIEU-BAL</skos:notation>
+<skos:prefLabel>Competitive position on foreign markets inside the EU over the past three months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CP3M-EXEU-BAL">
+<skos:notation>BS-CP3M-EXEU-BAL</skos:notation>
+<skos:prefLabel>Competitive position on foreign markets outside the EU over the past three months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLP1-PC">
+<skos:notation>BS-FLP1-PC</skos:notation>
+<skos:prefLabel>Factors limiting the production - None</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLP2-PC">
+<skos:notation>BS-FLP2-PC</skos:notation>
+<skos:prefLabel>Factors limiting the production - Insufficient demand</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLP3-PC">
+<skos:notation>BS-FLP3-PC</skos:notation>
+<skos:prefLabel>Factors limiting the production - Labour</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLP4-PC">
+<skos:notation>BS-FLP4-PC</skos:notation>
+<skos:prefLabel>Factors limiting the production - Equipment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLP5-PC">
+<skos:notation>BS-FLP5-PC</skos:notation>
+<skos:prefLabel>Factors limiting the production - Other</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLP6-PC">
+<skos:notation>BS-FLP6-PC</skos:notation>
+<skos:prefLabel>Factors limiting the production - Financial constraints</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CTA-BAL">
+<skos:notation>BS-CTA-BAL</skos:notation>
+<skos:prefLabel>Building activity development over the past 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-COB-BAL">
+<skos:notation>BS-COB-BAL</skos:notation>
+<skos:prefLabel>Evolution of the current overall order books</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CEME-BAL">
+<skos:notation>BS-CEME-BAL</skos:notation>
+<skos:prefLabel>Employment expectations over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CPE-BAL">
+<skos:notation>BS-CPE-BAL</skos:notation>
+<skos:prefLabel>Price expectations over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CCI-BAL">
+<skos:notation>BS-CCI-BAL</skos:notation>
+<skos:prefLabel>Construction confidence indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLBA1-PC">
+<skos:notation>BS-FLBA1-PC</skos:notation>
+<skos:prefLabel>Factors limiting building activity - None</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLBA2-PC">
+<skos:notation>BS-FLBA2-PC</skos:notation>
+<skos:prefLabel>Factors limiting building activity - Insufficient demand</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLBA3-PC">
+<skos:notation>BS-FLBA3-PC</skos:notation>
+<skos:prefLabel>Factors limiting building activity - Weather conditions</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLBA4-PC">
+<skos:notation>BS-FLBA4-PC</skos:notation>
+<skos:prefLabel>Factors limiting building activity - Shortage of labour</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLBA5-PC">
+<skos:notation>BS-FLBA5-PC</skos:notation>
+<skos:prefLabel>Factors limiting building activity - Shortage of material and/or equipment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLBA6-PC">
+<skos:notation>BS-FLBA6-PC</skos:notation>
+<skos:prefLabel>Factors limiting building activity - Other</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLBA7-PC">
+<skos:notation>BS-FLBA7-PC</skos:notation>
+<skos:prefLabel>Factors limiting building activity - Financial constraints</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-OTEB">
+<skos:notation>BS-OTEB</skos:notation>
+<skos:prefLabel>Operating time ensured by current backlog, months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-RPBS">
+<skos:notation>BS-RPBS</skos:notation>
+<skos:prefLabel>Business activity (sales) development over the past 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-RAS">
+<skos:notation>BS-RAS</skos:notation>
+<skos:prefLabel>Volume of stocks currently hold</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-ROP">
+<skos:notation>BS-ROP</skos:notation>
+<skos:prefLabel>Expectations of the number of orders placed with suppliers over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-REBS">
+<skos:notation>BS-REBS</skos:notation>
+<skos:prefLabel>Business activity expectations over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-REM">
+<skos:notation>BS-REM</skos:notation>
+<skos:prefLabel>Employment expectations over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-RCI">
+<skos:notation>BS-RCI</skos:notation>
+<skos:prefLabel>Retail confidence indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FS-LY">
+<skos:notation>BS-FS-LY</skos:notation>
+<skos:prefLabel>Financial situation over the last 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FS-NY">
+<skos:notation>BS-FS-NY</skos:notation>
+<skos:prefLabel>Financial situation over the next 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-GES-LY">
+<skos:notation>BS-GES-LY</skos:notation>
+<skos:prefLabel>General economic situation over the last 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-GES-NY">
+<skos:notation>BS-GES-NY</skos:notation>
+<skos:prefLabel>General economic situation over the next 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-PT-LY">
+<skos:notation>BS-PT-LY</skos:notation>
+<skos:prefLabel>Price trends over the last 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-PT-NY">
+<skos:notation>BS-PT-NY</skos:notation>
+<skos:prefLabel>Price trends over the next 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-UE-NY">
+<skos:notation>BS-UE-NY</skos:notation>
+<skos:prefLabel>Unemployment expectations over the next 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-MP-PR">
+<skos:notation>BS-MP-PR</skos:notation>
+<skos:prefLabel>The current economic situation is adequate to make major  purchases</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-MP-NY">
+<skos:notation>BS-MP-NY</skos:notation>
+<skos:prefLabel>Major purchases over the next 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-SV-PR">
+<skos:notation>BS-SV-PR</skos:notation>
+<skos:prefLabel>The current economic situation is adequate for savings</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-SV-NY">
+<skos:notation>BS-SV-NY</skos:notation>
+<skos:prefLabel>Savings over the next 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-SFSH">
+<skos:notation>BS-SFSH</skos:notation>
+<skos:prefLabel>Statement on financial situation of household</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CSMCI">
+<skos:notation>BS-CSMCI</skos:notation>
+<skos:prefLabel>Consumer confidence indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-IBC-NTY">
+<skos:notation>BS-IBC-NTY</skos:notation>
+<skos:prefLabel>Intention to buy a car within the next 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-PBH-NTY">
+<skos:notation>BS-PBH-NTY</skos:notation>
+<skos:prefLabel>Purchase or build a home within the next 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-HI-NY">
+<skos:notation>BS-HI-NY</skos:notation>
+<skos:prefLabel>Home improvements over the next 12 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-ESI-I">
+<skos:notation>BS-ESI-I</skos:notation>
+<skos:prefLabel>Economic sentiment indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-ICI-BAL">
+<skos:notation>BS-ICI-BAL</skos:notation>
+<skos:prefLabel>Industrial confidence indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-RCI-BAL">
+<skos:notation>BS-RCI-BAL</skos:notation>
+<skos:prefLabel>Retail confidence indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CSMCI-BAL">
+<skos:notation>BS-CSMCI-BAL</skos:notation>
+<skos:prefLabel>Consumer confidence indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-SCI-BAL">
+<skos:notation>BS-SCI-BAL</skos:notation>
+<skos:prefLabel>Services Confidence Indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-SABC">
+<skos:notation>BS-SABC</skos:notation>
+<skos:prefLabel>Business situation development over the past 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-SARM">
+<skos:notation>BS-SARM</skos:notation>
+<skos:prefLabel>Evolution of demand over the past 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-SAEM">
+<skos:notation>BS-SAEM</skos:notation>
+<skos:prefLabel>Expectation of the demand over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-SERM">
+<skos:notation>BS-SERM</skos:notation>
+<skos:prefLabel>Evolution of employment over the past 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-SEEM">
+<skos:notation>BS-SEEM</skos:notation>
+<skos:prefLabel>Expectation of the employment over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-SCI">
+<skos:notation>BS-SCI</skos:notation>
+<skos:prefLabel>Services Confidence Indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-PE3M">
+<skos:notation>BS-PE3M</skos:notation>
+<skos:prefLabel>Expectations of the prices over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-BCI">
+<skos:notation>BS-BCI</skos:notation>
+<skos:prefLabel>Business Climate Indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI00">
+<skos:notation>CP-HI00</skos:notation>
+<skos:prefLabel>HICP - All items (HICP=Harmonized Index of Consumer Prices)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI01">
+<skos:notation>CP-HI01</skos:notation>
+<skos:prefLabel>HICP - Food and non alcoholic beverages</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI02">
+<skos:notation>CP-HI02</skos:notation>
+<skos:prefLabel>HICP - Alcoholic beverages and tobacco</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI03">
+<skos:notation>CP-HI03</skos:notation>
+<skos:prefLabel>HICP - Clothing and footwear</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI04">
+<skos:notation>CP-HI04</skos:notation>
+<skos:prefLabel>HICP - Housing, water, electricity,gas and other fuels</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI05">
+<skos:notation>CP-HI05</skos:notation>
+<skos:prefLabel>HICP - Furnishings, household equipment and maintenance</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI06">
+<skos:notation>CP-HI06</skos:notation>
+<skos:prefLabel>HICP - Health</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI07">
+<skos:notation>CP-HI07</skos:notation>
+<skos:prefLabel>HICP - Transport</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI08">
+<skos:notation>CP-HI08</skos:notation>
+<skos:prefLabel>HICP - Communication</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI09">
+<skos:notation>CP-HI09</skos:notation>
+<skos:prefLabel>HICP - Recreation and culture</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI10">
+<skos:notation>CP-HI10</skos:notation>
+<skos:prefLabel>HICP - Education</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI11">
+<skos:notation>CP-HI11</skos:notation>
+<skos:prefLabel>HICP - Hotels, cafes and restaurants</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI12">
+<skos:notation>CP-HI12</skos:notation>
+<skos:prefLabel>HICP - Miscellaneous goods and services</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI00XEF">
+<skos:notation>CP-HI00XEF</skos:notation>
+<skos:prefLabel>HICP - All items excluding energy, food, alcohol and tobacco</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI00XTB">
+<skos:notation>CP-HI00XTB</skos:notation>
+<skos:prefLabel>HICP - All items excluding tobacco</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HIE">
+<skos:notation>CP-HIE</skos:notation>
+<skos:prefLabel>HICP - Energy</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HIF">
+<skos:notation>CP-HIF</skos:notation>
+<skos:prefLabel>HICP - Food</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HIFU">
+<skos:notation>CP-HIFU</skos:notation>
+<skos:prefLabel>HICP - Unprocessed food</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HIG">
+<skos:notation>CP-HIG</skos:notation>
+<skos:prefLabel>HICP - Total goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HIIG">
+<skos:notation>CP-HIIG</skos:notation>
+<skos:prefLabel>HICP - Industrial goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HIS">
+<skos:notation>CP-HIS</skos:notation>
+<skos:prefLabel>HICP - Total services</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HIIGXE">
+<skos:notation>CP-HIIGXE</skos:notation>
+<skos:prefLabel>HICP - Non-energy industrial goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI00XE">
+<skos:notation>CP-HI00XE</skos:notation>
+<skos:prefLabel>HICP - All items excluding energy</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI00XEFU">
+<skos:notation>CP-HI00XEFU</skos:notation>
+<skos:prefLabel>HICP - All items excluding energy and unprocessed food</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/CP-HI00XES">
+<skos:notation>CP-HI00XES</skos:notation>
+<skos:prefLabel>HICP - All items excluding energy and seasonal food</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/ET-T">
+<skos:notation>ET-T</skos:notation>
+<skos:prefLabel>Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/ET-CAP">
+<skos:notation>ET-CAP</skos:notation>
+<skos:prefLabel>Capital goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/ET-CONS">
+<skos:notation>ET-CONS</skos:notation>
+<skos:prefLabel>Consumer goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/ET-CONXT">
+<skos:notation>ET-CONXT</skos:notation>
+<skos:prefLabel>Consumer goods (excluding transport equipment)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/ET-INTER">
+<skos:notation>ET-INTER</skos:notation>
+<skos:prefLabel>Intermediate goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-PPI">
+<skos:notation>IS-PPI</skos:notation>
+<skos:prefLabel>Output prices of the domestic market index (Producer price index) (NSA)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IO">
+<skos:notation>IS-IO</skos:notation>
+<skos:prefLabel>New orders received index</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IP">
+<skos:notation>IS-IP</skos:notation>
+<skos:prefLabel>Production index</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IP-SA">
+<skos:notation>IS-IP-SA</skos:notation>
+<skos:prefLabel>Production index - Seasonally and calendar adjusted data (SCA)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-EPI">
+<skos:notation>IS-EPI</skos:notation>
+<skos:prefLabel>Number of persons employed index</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-HWI">
+<skos:notation>IS-HWI</skos:notation>
+<skos:prefLabel>Hours worked index</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-WSI">
+<skos:notation>IS-WSI</skos:notation>
+<skos:prefLabel>Gross wages and salaries index</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IPI">
+<skos:notation>IS-IPI</skos:notation>
+<skos:prefLabel>Cost index (input price index) - New residential buildings</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-PEI">
+<skos:notation>IS-PEI</skos:notation>
+<skos:prefLabel>Building permits index - New residential buildings</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IT">
+<skos:notation>IS-IT</skos:notation>
+<skos:prefLabel>Turnover index - Calendar adjusted data, not seasonally adjusted data (CA)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-ITT">
+<skos:notation>IS-ITT</skos:notation>
+<skos:prefLabel>Turnover index - total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-ITD">
+<skos:notation>IS-ITD</skos:notation>
+<skos:prefLabel>Turnover index - domestic market</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-ITND">
+<skos:notation>IS-ITND</skos:notation>
+<skos:prefLabel>Turnover index - non-domestic market</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-DIT">
+<skos:notation>IS-DIT</skos:notation>
+<skos:prefLabel>Deflated turnover index</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IMPR">
+<skos:notation>IS-IMPR</skos:notation>
+<skos:prefLabel>Import price index (NSA)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IMPX">
+<skos:notation>IS-IMPX</skos:notation>
+<skos:prefLabel>Import price index - non euro area (NSA)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IMPZ">
+<skos:notation>IS-IMPZ</skos:notation>
+<skos:prefLabel>Import price index - euro area (NSA)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-PNG-TJ">
+<skos:notation>IS-PNG-TJ</skos:notation>
+<skos:prefLabel>Production of natural gas, TJ (GCV)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-CNG-TJ">
+<skos:notation>IS-CNG-TJ</skos:notation>
+<skos:prefLabel>Total consumption of natural gas, TJ (GCV)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-ING-TJ">
+<skos:notation>IS-ING-TJ</skos:notation>
+<skos:prefLabel>Imports of natural gas, TJ (GCV)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-PEL-GWH">
+<skos:notation>IS-PEL-GWH</skos:notation>
+<skos:prefLabel>Production of electricity - GWh</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-CEL-GWH">
+<skos:notation>IS-CEL-GWH</skos:notation>
+<skos:prefLabel>Consumption of electricity - GWh</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IEL-GWH">
+<skos:notation>IS-IEL-GWH</skos:notation>
+<skos:prefLabel>Imports of electricity - GWh</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-ROMS-T">
+<skos:notation>IS-ROMS-T</skos:notation>
+<skos:prefLabel>Refinery output of motor spirit - 1000t</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IDMS-T">
+<skos:notation>IS-IDMS-T</skos:notation>
+<skos:prefLabel>Inland deliveries of motor spirit - 1000t</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-ROGD-T">
+<skos:notation>IS-ROGD-T</skos:notation>
+<skos:prefLabel>Refinery output of gas/diesel oil - 1000t</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IDGD-T">
+<skos:notation>IS-IDGD-T</skos:notation>
+<skos:prefLabel>Inland deliveries of gas/diesel oil - 1000t</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-UN-T-TOT">
+<skos:notation>LM-UN-T-TOT</skos:notation>
+<skos:prefLabel>Unemployment according to ILO definition - Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-UN-M-TOT">
+<skos:notation>LM-UN-M-TOT</skos:notation>
+<skos:prefLabel>Unemployment according to ILO definition - Males</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-UN-F-TOT">
+<skos:notation>LM-UN-F-TOT</skos:notation>
+<skos:prefLabel>Unemployment according to ILO definition - Females</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-UN-T-LE25">
+<skos:notation>LM-UN-T-LE25</skos:notation>
+<skos:prefLabel>Unemployment according to ILO definition - Under 25 years - Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-UN-M-LE25">
+<skos:notation>LM-UN-M-LE25</skos:notation>
+<skos:prefLabel>Unemployment according to ILO definition - Under 25 years - Males</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-UN-F-LE25">
+<skos:notation>LM-UN-F-LE25</skos:notation>
+<skos:prefLabel>Unemployment according to ILO definition - Under 25 years - Females</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-UN-T-GT25">
+<skos:notation>LM-UN-T-GT25</skos:notation>
+<skos:prefLabel>Unemployment according to ILO definition - Over 25 years - Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-UN-M-GT25">
+<skos:notation>LM-UN-M-GT25</skos:notation>
+<skos:prefLabel>Unemployment according to ILO definition - Over 25 years - Males</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-UN-F-GT25">
+<skos:notation>LM-UN-F-GT25</skos:notation>
+<skos:prefLabel>Unemployment according to ILO definition - Over 25 years - Females</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-LCI-TOT">
+<skos:notation>LM-LCI-TOT</skos:notation>
+<skos:prefLabel>Labour cost index - Total labour cost</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-LCI-SAL">
+<skos:notation>LM-LCI-SAL</skos:notation>
+<skos:prefLabel>Labour cost index - Wages and salaries</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/LM-LCI-OTH">
+<skos:notation>LM-LCI-OTH</skos:notation>
+<skos:prefLabel>Labour cost index - Labour costs other than wages and salaries</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-CBDF-RT">
+<skos:notation>MF-CBDF-RT</skos:notation>
+<skos:prefLabel>Central bank interest rates: Deposit facility (end of period)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-CBRO-RT">
+<skos:notation>MF-CBRO-RT</skos:notation>
+<skos:prefLabel>Central bank interest rates: Main refinancing operations (end of period)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-CBLF-RT">
+<skos:notation>MF-CBLF-RT</skos:notation>
+<skos:prefLabel>Central bank interest rates: Marginal lending facility (end of period)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-DDI-RT">
+<skos:notation>MF-DDI-RT</skos:notation>
+<skos:prefLabel>Day-to-day money market interest rates (average)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-3MI-RT">
+<skos:notation>MF-3MI-RT</skos:notation>
+<skos:prefLabel>3-month interest rates (average)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-EY1YM-RT">
+<skos:notation>MF-EY1YM-RT</skos:notation>
+<skos:prefLabel>Euro yields - 1 year (average)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-EY5YM-RT">
+<skos:notation>MF-EY5YM-RT</skos:notation>
+<skos:prefLabel>Euro yields - 5 years (average)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-EY10YM-RT">
+<skos:notation>MF-EY10YM-RT</skos:notation>
+<skos:prefLabel>Euro yields - 10 years (average)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-LTGBY-RT">
+<skos:notation>MF-LTGBY-RT</skos:notation>
+<skos:prefLabel>Long term government bond yields - Maastricht definition (average)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-EXA-RT">
+<skos:notation>MF-EXA-RT</skos:notation>
+<skos:prefLabel>Exchange rates against the ECU/euro (average)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-M1-NSA">
+<skos:notation>MF-M1-NSA</skos:notation>
+<skos:prefLabel>Money supply M1 - NSA</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-M1-SA">
+<skos:notation>MF-M1-SA</skos:notation>
+<skos:prefLabel>Money supply M1 - SA</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-M2-NSA">
+<skos:notation>MF-M2-NSA</skos:notation>
+<skos:prefLabel>Money supply M2 - NSA</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-M2-SA">
+<skos:notation>MF-M2-SA</skos:notation>
+<skos:prefLabel>Money supply M2 - SA</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-M3-NSA">
+<skos:notation>MF-M3-NSA</skos:notation>
+<skos:prefLabel>Money supply M3 - NSA</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-M3-SA">
+<skos:notation>MF-M3-SA</skos:notation>
+<skos:prefLabel>Money supply M3 - SA</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-LER-NSA">
+<skos:notation>MF-LER-NSA</skos:notation>
+<skos:prefLabel>Total loans to residents by MFIs - NSA</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-LGG-NSA">
+<skos:notation>MF-LGG-NSA</skos:notation>
+<skos:prefLabel>Loans to general government by MFIs - NSA</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-LOR-NSA">
+<skos:notation>MF-LOR-NSA</skos:notation>
+<skos:prefLabel>Loans to other residents by MFIs - NSA</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/F4">
+<skos:notation>F4</skos:notation>
+<skos:prefLabel>Loans</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-SMC-MRD-EUR">
+<skos:notation>MF-SMC-MRD-EUR</skos:notation>
+<skos:prefLabel>Stock market capitalisation in milliard euro (end of period)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-SP-I">
+<skos:notation>MF-SP-I</skos:notation>
+<skos:prefLabel>Share price indices (average)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/MF-FOR-MIO-EUR">
+<skos:notation>MF-FOR-MIO-EUR</skos:notation>
+<skos:prefLabel>Foreign official reserves, including gold in million euro (end of period)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B1G-CP-MIO-EUR">
+<skos:notation>NA-B1G-CP-MIO-EUR</skos:notation>
+<skos:prefLabel>Gross value added at current prices (mio euro)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B1G-CP">
+<skos:notation>NA-B1G-CP</skos:notation>
+<skos:prefLabel>Gross value added at current prices</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D1-CP-MIO-EUR">
+<skos:notation>NA-D1-CP-MIO-EUR</skos:notation>
+<skos:prefLabel>Compensation of employees at current prices (mio euro)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D11-CP-MIO-EUR">
+<skos:notation>NA-D11-CP-MIO-EUR</skos:notation>
+<skos:prefLabel>Gross wages and salaries at current prices (mio euro)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D11">
+<skos:notation>NA-D11</skos:notation>
+<skos:prefLabel>Gross wages and salaries</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B2G_B3G-CP-MIO-EUR">
+<skos:notation>NA-B2G_B3G-CP-MIO-EUR</skos:notation>
+<skos:prefLabel>Gross operating surplus and mixed income (mio euro)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-EMP-1000">
+<skos:notation>NA-EMP-1000</skos:notation>
+<skos:prefLabel>Total employment (1000)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-EMP">
+<skos:notation>NA-EMP</skos:notation>
+<skos:prefLabel>Total employment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-SAL-1000">
+<skos:notation>NA-SAL-1000</skos:notation>
+<skos:prefLabel>Employees (1000)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-SAL">
+<skos:notation>NA-SAL</skos:notation>
+<skos:prefLabel>Employees</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-SELF-1000">
+<skos:notation>NA-SELF-1000</skos:notation>
+<skos:prefLabel>Self-employed (1000)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-SELF">
+<skos:notation>NA-SELF</skos:notation>
+<skos:prefLabel>Self-employed</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B1GM-CP-MIO-EUR">
+<skos:notation>NA-B1GM-CP-MIO-EUR</skos:notation>
+<skos:prefLabel>Gross domestic product at market current prices (mio euro)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B1GM-KP-RT1">
+<skos:notation>NA-B1GM-KP-RT1</skos:notation>
+<skos:prefLabel>Gross domestic product at constant prices (% change t/t-1)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B1GM-CLV-I2000">
+<skos:notation>NA-B1GM-CLV-I2000</skos:notation>
+<skos:prefLabel>Gross domestic product at constant prices (index 2000=100)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D21_M_D31">
+<skos:notation>NA-D21_M_D31</skos:notation>
+<skos:prefLabel>Taxes less subsidies on production and imports</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B2G_B3G">
+<skos:notation>NA-B2G_B3G</skos:notation>
+<skos:prefLabel>Gross operating surplus and gross mixed income</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D1">
+<skos:notation>NA-D1</skos:notation>
+<skos:prefLabel>Compensation of employees</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B5N">
+<skos:notation>NA-B5N</skos:notation>
+<skos:prefLabel>Net national income</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B5G">
+<skos:notation>NA-B5G</skos:notation>
+<skos:prefLabel>Gross national income</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B6N">
+<skos:notation>NA-B6N</skos:notation>
+<skos:prefLabel>Net disposable income</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B6G">
+<skos:notation>NA-B6G</skos:notation>
+<skos:prefLabel>Gross disposable income</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B8G">
+<skos:notation>NA-B8G</skos:notation>
+<skos:prefLabel>Gross saving</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B8N">
+<skos:notation>NA-B8N</skos:notation>
+<skos:prefLabel>Net saving</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B9">
+<skos:notation>NA-B9</skos:notation>
+<skos:prefLabel>Net lending (+) /net borrowing (-)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D1_D4PAY">
+<skos:notation>NA-D1_D4PAY</skos:notation>
+<skos:prefLabel>Primary incomes, payable</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D1_D4REC">
+<skos:notation>NA-D1_D4REC</skos:notation>
+<skos:prefLabel>Primary incomes, receivable</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D1_D4">
+<skos:notation>NA-D1_D4</skos:notation>
+<skos:prefLabel>Net primary income transfers</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D5_TO_D7PAY">
+<skos:notation>NA-D5_TO_D7PAY</skos:notation>
+<skos:prefLabel>Current transfers, payable</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D5_TO_D7REC">
+<skos:notation>NA-D5_TO_D7REC</skos:notation>
+<skos:prefLabel>Current transfers, receivable</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D5_TO_D7">
+<skos:notation>NA-D5_TO_D7</skos:notation>
+<skos:prefLabel>Net current transfers</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D9">
+<skos:notation>NA-D9</skos:notation>
+<skos:prefLabel>Capital transfers, net</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D9PAY">
+<skos:notation>NA-D9PAY</skos:notation>
+<skos:prefLabel>Capital transfers, payable</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D9REC">
+<skos:notation>NA-D9REC</skos:notation>
+<skos:prefLabel>Capital transfers, receivable</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D8">
+<skos:notation>NA-D8</skos:notation>
+<skos:prefLabel>Adjustment for the change in net equity of households in pension funds reserves</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-K2">
+<skos:notation>NA-K2</skos:notation>
+<skos:prefLabel>Acquisitions less disposals of non-financial non-produced assets</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-K1">
+<skos:notation>NA-K1</skos:notation>
+<skos:prefLabel>Consumption of fixed capital</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-D2_M_D3">
+<skos:notation>NA-D2_M_D3</skos:notation>
+<skos:prefLabel>Taxes on production and imports less subsidies</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P119">
+<skos:notation>NA-P119</skos:notation>
+<skos:prefLabel>Financial intermediation services indirectly measured (FISIM)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B1G">
+<skos:notation>NA-B1G</skos:notation>
+<skos:prefLabel>Gross value added</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B1G-CLV2000">
+<skos:notation>NA-B1G-CLV2000</skos:notation>
+<skos:prefLabel>Gross value added in volumes</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B1G-MIO-EUR-CLV2000">
+<skos:notation>NA-B1G-MIO-EUR-CLV2000</skos:notation>
+<skos:prefLabel>Gross value added - chain-linked volumes, reference year 2000 (at 2000 exchange rates) (mio euro)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B1G-MIO-EUR-CLV2005">
+<skos:notation>NA-B1G-MIO-EUR-CLV2005</skos:notation>
+<skos:prefLabel>Gross value added - chain-linked volumes, reference year 2005 (at 2005 exchange rates) (mio euro)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B1GM">
+<skos:notation>NA-B1GM</skos:notation>
+<skos:prefLabel>Gross domestic product at market prices</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P3">
+<skos:notation>NA-P3</skos:notation>
+<skos:prefLabel>Final consumption expenditure</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P3_S13">
+<skos:notation>NA-P3_S13</skos:notation>
+<skos:prefLabel>Final consumption expenditure: general government</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P31_S14">
+<skos:notation>NA-P31_S14</skos:notation>
+<skos:prefLabel>Final consumption expenditure: households</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P31_S15">
+<skos:notation>NA-P31_S15</skos:notation>
+<skos:prefLabel>Final consumption expenditure: NPISH</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P31_S14_S15">
+<skos:notation>NA-P31_S14_S15</skos:notation>
+<skos:prefLabel>Final consumption expenditure: household and NPISH</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P5">
+<skos:notation>NA-P5</skos:notation>
+<skos:prefLabel>Gross capital formation</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P51">
+<skos:notation>NA-P51</skos:notation>
+<skos:prefLabel>Gross fixed capital formation - total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P51-AB">
+<skos:notation>NA-P51-AB</skos:notation>
+<skos:prefLabel>Gross fixed capital formation: products of agriculture</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P51-MET">
+<skos:notation>NA-P51-MET</skos:notation>
+<skos:prefLabel>Gross fixed capital formation: metal products and machinery</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P51-DM">
+<skos:notation>NA-P51-DM</skos:notation>
+<skos:prefLabel>Gross fixed capital formation: transport equipment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P51-FA">
+<skos:notation>NA-P51-FA</skos:notation>
+<skos:prefLabel>Gross fixed capital formation: construction work - housing</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P51-FB">
+<skos:notation>NA-P51-FB</skos:notation>
+<skos:prefLabel>Gross fixed capital formation: construction work - other constructions</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P51-OTH">
+<skos:notation>NA-P51-OTH</skos:notation>
+<skos:prefLabel>Gross fixed capital formation: other products</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P52">
+<skos:notation>NA-P52</skos:notation>
+<skos:prefLabel>Changes in inventories</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P53">
+<skos:notation>NA-P53</skos:notation>
+<skos:prefLabel>Acquisition less disposals of valuables</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P3_P5">
+<skos:notation>NA-P3_P5</skos:notation>
+<skos:prefLabel>Domestic demand</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P61">
+<skos:notation>NA-P61</skos:notation>
+<skos:prefLabel>Exports of goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P62">
+<skos:notation>NA-P62</skos:notation>
+<skos:prefLabel>Exports of services</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P6">
+<skos:notation>NA-P6</skos:notation>
+<skos:prefLabel>Exports of goods and services</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P71">
+<skos:notation>NA-P71</skos:notation>
+<skos:prefLabel>Imports of goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P72">
+<skos:notation>NA-P72</skos:notation>
+<skos:prefLabel>Imports of services</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-P7">
+<skos:notation>NA-P7</skos:notation>
+<skos:prefLabel>Imports of goods and services</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B111">
+<skos:notation>NA-B111</skos:notation>
+<skos:prefLabel>External balance: goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B112">
+<skos:notation>NA-B112</skos:notation>
+<skos:prefLabel>External balance: services</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-B11">
+<skos:notation>NA-B11</skos:notation>
+<skos:prefLabel>External balance: total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-GDEF">
+<skos:notation>NA-GDEF</skos:notation>
+<skos:prefLabel>General government deficit (-) / surplus (+)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-GDEBT">
+<skos:notation>NA-GDEBT</skos:notation>
+<skos:prefLabel>General government gross debt</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-GEXP">
+<skos:notation>NA-GEXP</skos:notation>
+<skos:prefLabel>General government expenditure</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-GREV">
+<skos:notation>NA-GREV</skos:notation>
+<skos:prefLabel>General government revenue</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-GFINV">
+<skos:notation>NA-GFINV</skos:notation>
+<skos:prefLabel>General government fixed investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-GPBAL">
+<skos:notation>NA-GPBAL</skos:notation>
+<skos:prefLabel>General government primary balance</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/GD">
+<skos:notation>GD</skos:notation>
+<skos:prefLabel>Government consolidated gross debt</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-IGL-EU27">
+<skos:notation>NA-IGL-EU27</skos:notation>
+<skos:prefLabel>Intergovernmental lending within EU27 (2007-2013) in the context of the financial crisis</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-IGL-EU25">
+<skos:notation>NA-IGL-EU25</skos:notation>
+<skos:prefLabel>Intergovernmental lending within EU25 (2004-2006) in the context of the financial crisis</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-IGL-EA17">
+<skos:notation>NA-IGL-EA17</skos:notation>
+<skos:prefLabel>Intergovernmental lending within EA17 (2011-2013) in the context of the financial crisis</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-IGL-EA16">
+<skos:notation>NA-IGL-EA16</skos:notation>
+<skos:prefLabel>Intergovernmental lending within EA16 (2009-2010) in the context of the financial crisis</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/INV_TOT">
+<skos:notation>INV_TOT</skos:notation>
+<skos:prefLabel>Total investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/INV_BUS">
+<skos:notation>INV_BUS</skos:notation>
+<skos:prefLabel>Business investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/INV_GOV">
+<skos:notation>INV_GOV</skos:notation>
+<skos:prefLabel>Government investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/INV_HH">
+<skos:notation>INV_HH</skos:notation>
+<skos:prefLabel>Households investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FCI">
+<skos:notation>BS-FCI</skos:notation>
+<skos:prefLabel>Financial services Confidence Indicator</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-BSDP3">
+<skos:notation>BS-BSDP3</skos:notation>
+<skos:prefLabel>Assessment of business situation over the past 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-DEVP3">
+<skos:notation>BS-DEVP3</skos:notation>
+<skos:prefLabel>Evolution of demand over the past 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-DEXN3">
+<skos:notation>BS-DEXN3</skos:notation>
+<skos:prefLabel>Evolution of demand expected over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-EEVP3">
+<skos:notation>BS-EEVP3</skos:notation>
+<skos:prefLabel>Evolution of employment over the past 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-EEXN3">
+<skos:notation>BS-EEXN3</skos:notation>
+<skos:prefLabel>Evolution of employment expected over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-OIDP3">
+<skos:notation>BS-OIDP3</skos:notation>
+<skos:prefLabel>Operating income development over the last three months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-OIEN3">
+<skos:notation>BS-OIEN3</skos:notation>
+<skos:prefLabel>Operating income expectations over the next three months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-OEDP3">
+<skos:notation>BS-OEDP3</skos:notation>
+<skos:prefLabel>Operating expenses development over the last three months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-OEEN3">
+<skos:notation>BS-OEEN3</skos:notation>
+<skos:prefLabel>Operating expenses expectations over the next three months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-PDP3">
+<skos:notation>BS-PDP3</skos:notation>
+<skos:prefLabel>Profitability development over the last three months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-PEN3">
+<skos:notation>BS-PEN3</skos:notation>
+<skos:prefLabel>Profitability expectations over the next three months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CEDP3">
+<skos:notation>BS-CEDP3</skos:notation>
+<skos:prefLabel>Capital expenditure development over the last 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CEEN3">
+<skos:notation>BS-CEEN3</skos:notation>
+<skos:prefLabel>Capital expenditure expectations over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CPDTP3">
+<skos:notation>BS-CPDTP3</skos:notation>
+<skos:prefLabel>Competitive position development over the past 3 months (total)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CPD1P3">
+<skos:notation>BS-CPD1P3</skos:notation>
+<skos:prefLabel>Competitive position development over the past 3 months (in your country)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CPD2P3">
+<skos:notation>BS-CPD2P3</skos:notation>
+<skos:prefLabel>Competitive position development over the past 3 months (within the euro area)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CPD3P3">
+<skos:notation>BS-CPD3P3</skos:notation>
+<skos:prefLabel>Competitive position development over the past 3 months (within the EU)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CPD4P3">
+<skos:notation>BS-CPD4P3</skos:notation>
+<skos:prefLabel>Competitive position development over the past 3 months (outside the EU)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CPETN3">
+<skos:notation>BS-CPETN3</skos:notation>
+<skos:prefLabel>Competitive position expectations over the next 3 months (total)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CPE1N3">
+<skos:notation>BS-CPE1N3</skos:notation>
+<skos:prefLabel>Competitive position expectations over the next 3 months (in your country)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CPE2N3">
+<skos:notation>BS-CPE2N3</skos:notation>
+<skos:prefLabel>Competitive position expectations over the next 3 months (within the euro area)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CPE3N3">
+<skos:notation>BS-CPE3N3</skos:notation>
+<skos:prefLabel>Competitive position expectations over the next 3 months (within the EU)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-CPE4N3">
+<skos:notation>BS-CPE4N3</skos:notation>
+<skos:prefLabel>Competitive position expectations over the next 3 months (outside the EU)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/TOTAL">
+<skos:notation>TOTAL</skos:notation>
+<skos:prefLabel>Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NEW_DW">
+<skos:notation>NEW_DW</skos:notation>
+<skos:prefLabel>New dwellings</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/EXST_DW">
+<skos:notation>EXST_DW</skos:notation>
+<skos:prefLabel>Existing dwellings</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/JOBRATE">
+<skos:notation>JOBRATE</skos:notation>
+<skos:prefLabel>Job vacancy rate</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/INTINVT">
+<skos:notation>INTINVT</skos:notation>
+<skos:prefLabel>International investment position: Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/DIRINVT">
+<skos:notation>DIRINVT</skos:notation>
+<skos:prefLabel>Direct investment: Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/PORINVT">
+<skos:notation>PORINVT</skos:notation>
+<skos:prefLabel>Portfolio investment: Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/FINDERT">
+<skos:notation>FINDERT</skos:notation>
+<skos:prefLabel>Financial derivatives: Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/OTHINVT">
+<skos:notation>OTHINVT</skos:notation>
+<skos:prefLabel>Other investment: Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/RESASSETST">
+<skos:notation>RESASSETST</skos:notation>
+<skos:prefLabel>Reserves assets: total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/GROSFORDEBT">
+<skos:notation>GROSFORDEBT</skos:notation>
+<skos:prefLabel>Gross foreign debt</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NETFORDEBT">
+<skos:notation>NETFORDEBT</skos:notation>
+<skos:prefLabel>Net external debt</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NEEREA17">
+<skos:notation>NEEREA17</skos:notation>
+<skos:prefLabel>Nominal Effective Exchange Rate - 17 trading partners (Euro Area)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NEER27">
+<skos:notation>NEER27</skos:notation>
+<skos:prefLabel>Nominal Effective Exchange Rate - 27 trading partners</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NEER37">
+<skos:notation>NEER37</skos:notation>
+<skos:prefLabel>Nominal Effective Exchange Rate - 37 trading partners</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NEER42">
+<skos:notation>NEER42</skos:notation>
+<skos:prefLabel>Nominal Effective Exchange Rate - 42 trading partners</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/REEREA17CPI">
+<skos:notation>REEREA17CPI</skos:notation>
+<skos:prefLabel>Real Effective Exchange Rate (deflator: consumer price indices - 17 trading partners - Euro Area)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/REER27CPI">
+<skos:notation>REER27CPI</skos:notation>
+<skos:prefLabel>Real Effective Exchange Rate (deflator: consumer price indices - 27 trading partners)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/REER37CPI">
+<skos:notation>REER37CPI</skos:notation>
+<skos:prefLabel>Real Effective Exchange Rate (deflator: consumer price indices - 37 trading partners)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/REER42CPI">
+<skos:notation>REER42CPI</skos:notation>
+<skos:prefLabel>Real Effective Exchange Rate (deflator: consumer price indices - 42 trading partners)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-RPE">
+<skos:notation>BS-RPE</skos:notation>
+<skos:prefLabel>Price expectations over the next 3 months</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_CA">
+<skos:notation>BP_CA</skos:notation>
+<skos:prefLabel>Current account</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_EO">
+<skos:notation>BP_EO</skos:notation>
+<skos:prefLabel>Net errors and omissions</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_G">
+<skos:notation>BP_G</skos:notation>
+<skos:prefLabel>Goods</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_IN1">
+<skos:notation>BP_IN1</skos:notation>
+<skos:prefLabel>Primary income</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_IN2">
+<skos:notation>BP_IN2</skos:notation>
+<skos:prefLabel>Secondary income</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_S">
+<skos:notation>BP_S</skos:notation>
+<skos:prefLabel>Services</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_FA">
+<skos:notation>BP_FA</skos:notation>
+<skos:prefLabel>Financial account</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_FA__D__F">
+<skos:notation>BP_FA__D__F</skos:notation>
+<skos:prefLabel>"Financial account; Direct Investment"</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_FA__P__F">
+<skos:notation>BP_FA__P__F</skos:notation>
+<skos:prefLabel>"Financial account; Portfolio Investment"</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_FA__F__F7">
+<skos:notation>BP_FA__F__F7</skos:notation>
+<skos:prefLabel>"Financial account; Financial derivatives and employee stock options"</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_FA__O__F">
+<skos:notation>BP_FA__O__F</skos:notation>
+<skos:prefLabel>"Financial account; Other Investment"</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_FA__R__F">
+<skos:notation>BP_FA__R__F</skos:notation>
+<skos:prefLabel>"Financial account; Reserve assets"</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BP_CKA">
+<skos:notation>BP_CKA</skos:notation>
+<skos:prefLabel>Current and capital account - Millions of euro - Monthly data</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IP-SWDA">
+<skos:notation>IS-IP-SWDA</skos:notation>
+<skos:prefLabel>Production index - Seasonally and working days adjusted data (SWDA)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IP-WDA">
+<skos:notation>IS-IP-WDA</skos:notation>
+<skos:prefLabel>Production index - Data adjusted by working days (WDA)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IND_H">
+<skos:notation>IND_H</skos:notation>
+<skos:prefLabel>Headline indicators</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IND_A">
+<skos:notation>IND_A</skos:notation>
+<skos:prefLabel>Auxiliary indicators</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IND_T">
+<skos:notation>IND_T</skos:notation>
+<skos:prefLabel>All indicators</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IP-CA">
+<skos:notation>IS-IP-CA</skos:notation>
+<skos:prefLabel>Production index - Calendar adjusted data, not seasonally adjusted data (CA)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/IS-IP-SCA">
+<skos:notation>IS-IP-SCA</skos:notation>
+<skos:prefLabel>Production index - Seasonally and working days adjusted data (SCA)</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/NA-IGL-EU28">
+<skos:notation>NA-IGL-EU28</skos:notation>
+<skos:prefLabel>Intergovernmental lending within EU28 in the context of the financial crisis</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLB1-PC">
+<skos:notation>BS-FLB1-PC</skos:notation>
+<skos:prefLabel>Main factors limiting the business - none</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLB2-PC">
+<skos:notation>BS-FLB2-PC</skos:notation>
+<skos:prefLabel>Main factors limiting the business - insufficient demand</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLB3-PC">
+<skos:notation>BS-FLB3-PC</skos:notation>
+<skos:prefLabel>Main factors limiting the business - labour</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLB4-PC">
+<skos:notation>BS-FLB4-PC</skos:notation>
+<skos:prefLabel>Main factors limiting the business - equipment and/or space</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLB5-PC">
+<skos:notation>BS-FLB5-PC</skos:notation>
+<skos:prefLabel>Main factors limiting the business - financial constraints</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-FLB6-PC">
+<skos:notation>BS-FLB6-PC</skos:notation>
+<skos:prefLabel>Main factors limiting the business - others</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-QPS-PC">
+<skos:notation>BS-QPS-PC</skos:notation>
+<skos:prefLabel>Possibility to increase the volume of activity with present resources</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/invalid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/INV_BSN">
+<skos:notation>INV_BSN</skos:notation>
+<skos:prefLabel>Business investment</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/TOVT">
+<skos:notation>TOVT</skos:notation>
+<skos:prefLabel>Index of turnover - Total</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/TOVV">
+<skos:notation>TOVV</skos:notation>
+<skos:prefLabel>Index of deflated turnover</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/BS-QP-PC">
+<skos:notation>BS-QP-PC</skos:notation>
+<skos:prefLabel>Possibility to increase the volume of activity with present resources</skos:prefLabel>
+<adms:status rdf:resource="http://dd.eionet.europa.eu/vocabulary/datadictionary/status/valid"/>
+<skos:inScheme rdf:resource="http://dd.eionet.europa.eu/vocabulary/eurostat/indic/"/>
+</skos:Concept>
+</rdf:RDF>

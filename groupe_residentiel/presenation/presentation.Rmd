@@ -1,0 +1,1007 @@
+---
+title: "Prediction and analysis of the residential buildings permits"
+subtitle: "Schnieder project"
+author: |
+    | Justine Mao, Nikita Gusarov, Tom Vieillescazes
+    | \tiny{Under direction of Beatrice Roussillon and Mathias Verdiere}
+shortauthor: J.Mao, N.Gusarov, T.Vieillescazes
+institute: "Université Grenoble Alpes"
+shortinstitute: UGA
+date: "10 january 2020"
+header-includes:
+    - \usepackage{array}
+    - \usepackage{multicol}
+output: 
+    beamer_presentation:
+        theme: "Szeged"
+        colortheme: "spruce"
+        # template: Template.tex
+        slide_level: 2
+        # fonttheme: "structurebold"
+        toc: FALSE
+        # toc_depth: 1
+        df_print: "kable"
+        fig_width: 4
+        fig_height: 2.8
+        fig_caption: yes
+        includes:
+            in_header: Header.tex
+fontsize: 11pt
+# geometry: margin = 0.5in
+---
+
+```{r include = FALSE}
+###################
+# Setting r options
+###################
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(size = "tiny")
+knitr::opts_chunk$set(dpi = 600)
+knitr::opts_chunk$set(fig.align = "center") 
+knitr::opts_chunk$set(fig.pos = "!htbp")
+# Set chunk size
+def.chunk.hook  = knitr::knit_hooks$get("chunk")
+knitr::knit_hooks$set(chunk = 
+    function(x, options) {
+        x = def.chunk.hook(x, options)
+        ifelse(options$size != "normalsize", 
+            paste0("\n \\", options$size,"\n\n", x, "\n\n \\normalsize"), x)
+    })
+# Global options 
+options(warn = -1)
+```
+
+```{r include = FALSE}
+###############
+# Load packages
+###############
+# Data mod
+require(tidyverse)
+require(DataCombine)
+# Plot
+require(ggfortify)
+require(gridExtra)
+require(grid)
+# Print
+require(stargazer)
+require(texreg)
+require(xtable)
+# Time series 
+require(tseries)
+require(forecast)
+require(vars)
+# Other
+require(dplyr)
+# require(webshot)
+# require(png)
+# require(magick)
+options(xtable.comment = FALSE)
+```
+
+```{r include = FALSE}
+###################
+# Support functions
+###################
+# Render stargazer caption for tables on top
+bot_caption = function(expr) {
+    # Capture expression
+    x = capture.output(expr)
+    # Parsing
+    cap = grep("\\\\caption", x)
+    lab = grep("\\\\label", x)
+    last = grep("\\\\end\\{table", x)
+    # Paste results
+    cat(paste(c(x[-last], x[cap], x[lab], x[last])[-c(cap, lab)], 
+        collapse = "\n"), "\n")
+}
+```
+
+# Introduction 
+
+## Objectives 
+
+- Analyse the factors influencing construction permits number.
+- Elaborate a predictive model for the construction permits to be issued.
+
+## Presentation plan 
+
+- Litterature study presentation 
+- Database construction 
+- Data presentation
+- Data analysis 
+- Modelisation 
+    - Simple OLS models 
+    - Time series models 
+    - Alternative models
+
+```{r include = FALSE}
+##################################################
+################## Introduction ##################
+##################################################
+```
+
+# Litterature
+
+## Sources
+
+Nous avons commencé notre étude de la littérature par la recherche des articles méthodologiques et théoriques en lien avec le sujet traité. 
+
+Les moteurs de recherche scientifique les plus utilisés ont été :
+
+- Science Direct 
+- Google Scholar 
+- Elsevier 
+- SAGE journals 
+
+```{r include = FALSE}
+########################################################
+################## Revu de la litérat ##################
+########################################################
+```
+
+## Variables of interest 
+
+\tiny
+\begin{table}[H]
+\begin{tabular}{p{6cm} | c}
+\hline \\[-1.8ex]
+Number of building permits postponed by one quarter (French Building Federation, 2017) & + \\
+\hline
+10-year OAT rate lagged by two quarters (French Building Federation, 2017) & - \\
+\hline
+Unemployment rate lagged by two quarters (French Building Federation, 2017) & - \\
+\hline
+Deadline for housing outstandings in quarter sales shifted by one quarter (French Building Federation, 2017) & - \\
+\hline
+Political measure (French Building Federation, 2017)
+& + or - \\
+\hline
+Age of the population (Lindh et al, 2008) & \\
+- Individus moins de 20 ans & ++ \\
+- Individuals between 20 and 59 years old (National Institute for Demographic Studies, 2019) & + \\
+- Individuals over the age of 75 & -  \\
+\hline
+Real estate prices (Essay et al, 2015) & - \\
+\hline
+GDP (Lindh et al, 2002) & + \\
+\hline
+\end{tabular}
+\normalsize
+\caption{Variables of interest}
+\end{table}
+
+# Database
+
+## Data sources 
+
+```{r include = FALSE}
+##########################
+# Presentation des données 
+##########################
+```
+
+We construct our database using macroeconomical variables figuring in different french and international databases : 
+
+- Eurostat
+- Sit@del2
+- INSEE
+- OCDE
+
+## Data already studied 
+
+The variables that we have already presented are : 
+
+- Number of the building permits, 
+- Surface authorised for construction (not used in analysis anymore), 
+- GDP,
+- Long term interest rate,
+- Households spendings,
+- Households investments.
+
+## Changes and advances 
+
+We have extracted as well the following variables :
+
+- Population part by age group :
+    - less than 20 years old,
+    - from 20 to 59 years old,
+    - from 60 years and more.
+
+- Proxy variables serving to capture policies changes :
+    - elective cycles dummy variables,
+    - political party appartainance.
+
+- Real estate housing prices,
+- Household confidence index.
+
+```{r include = FALSE}
+# Data
+ydata = read.csv("../data/derived_data/df3.csv")[,-c(1:2)] %>%
+    dplyr::select(year = annee, 
+        GDP = PIB, 
+        TdI = Taux_interet, 
+        DCF_men = DepCF_men, 
+        FBCF_men,
+        T_NL = total_nombre_de_logements)
+ddata = read.csv("../data/derived_data/demographie.csv") %>%
+    dplyr::select(total = France,
+        moins20 = Em20,
+        mid20_59 = E20_59,
+        plus60 = E60p) %>%
+    mutate(moins20 = moins20/total*100,
+        mid20_59 = mid20_59/total*100,
+        plus60 = plus60/total*100) %>%
+    dplyr::select(moins20, 
+        mid20_59, 
+        plus60)
+pdata = read.csv("../data/derived_data/presidence.csv") 
+ydata = cbind(ydata, ddata[-26,])
+Xydata = cbind(ydata, pdata)
+```
+
+# Data
+
+## Descriptive statistics
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Statistiques déscriptives : full
+bot_caption(stargazer(ydata, 
+    summary = TRUE, 
+    header = FALSE,
+    nobs = FALSE,
+    covariate.labels = c(
+        "Year",
+        "GDP",
+        "Interest rate",
+        "Household spendings",
+        "Household investments",
+        "Number of permits",
+        "Population < 20 y.o.",
+        "Population 20-59 y.o.",
+        "Population > 60 y.o."),
+    omit.summary.stat = c("p25", "p75"),
+    title = "Descriptivve statistics for annual data"))
+```
+
+\FloatBarrier
+
+## Data transformation
+
+In our work we prefer to operate over indiced variables.
+
+```{r include = FALSE}
+# Relative transformation
+r_ydata = ydata %>%
+    mutate(t = year - min(year),
+        rGDP = GDP/lag(GDP),
+        rTdI = TdI/lag(TdI),
+        rDCFmen = DCF_men/lag(DCF_men),
+        rFBCFmen = FBCF_men/lag(FBCF_men),
+        rTNL = T_NL/lag(T_NL),
+        rmoins20 = moins20/lag(moins20),
+        rmid2059 = mid20_59/lag(mid20_59),
+        rplus60 = plus60/lag(plus60)) %>%
+    dplyr::select(t, rGDP, rTdI, 
+        rDCFmen, rFBCFmen, 
+        rTNL,
+        rmoins20, rmid2059, rplus60)
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Statistiques déscriptives
+bot_caption(stargazer(r_ydata, 
+    summary = TRUE, 
+    header = FALSE,
+    nobs = FALSE,
+    omit.summary.stat = c("p25", "p75", "min", "max"),
+    covariate.labels = c(
+        "Year",
+        "GDP",
+        "Interest rate",
+        "Household spendings",
+        "Household investments",
+        "Number of permits",
+        "Population < 20 y.o.",
+        "Population 20-59 y.o.",
+        "Population > 60 y.o."),
+    title = "Descriptive statistics for transformed data"))
+```
+
+\FloatBarrier
+
+## Graphical representation
+
+```{r include = FALSE}
+# Time data
+sr_ydata = r_ydata
+colnames(sr_ydata) = c(
+        "Year",
+        "GDP",
+        "Interest rate",
+        "Household spendings",
+        "Household investments",
+        "Number of permits",
+        "Population < 20 y.o.",
+        "Population 20-59 y.o.",
+        "Population > 60 y.o.")
+tr_ydata = ts(r_ydata, start = 1994, frequency = 1)
+str_ydata = ts(sr_ydata, start = 1994, frequency = 1)
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Original data"}
+# Plots
+str_ydata[, -1] %>% 
+    autoplot(facets = F, cex = 0.5) + 
+    theme(text = element_text(size = 7)) +
+    scale_colour_manual(values = c(
+        "GDP" = "#2bdfff", 
+        "Interest rate" = "#2b8bff",
+        "Household spendings" = "#8eff2b",
+        "Household investments" = "#067500",
+        "Number of permits" = "#f52707",
+        "Population < 20 y.o." = "#f569e9",
+        "Population 20-59 y.o." = "#f507cd",
+        "Population > 60 y.o." = "#70006e"))
+```
+
+\FloatBarrier
+
+## Political changes 
+
+```{r include = FALSE}
+# Relative transformation
+Xydata = ydata %>%
+    mutate(t = year,
+        rGDP = GDP/lag(GDP),
+        rTdI = TdI/lag(TdI),
+        rDCFmen = DCF_men/lag(DCF_men),
+        rFBCFmen = FBCF_men/lag(FBCF_men),
+        rTNL = T_NL/lag(T_NL),
+        rmoins20 = moins20/lag(moins20),
+        rmid2059 = mid20_59/lag(mid20_59),
+        rplus60 = plus60/lag(plus60)) %>%
+    dplyr::select(t, rGDP, rTdI, 
+        rDCFmen, rFBCFmen, 
+        rTNL,
+        rmoins20, rmid2059, rplus60)
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Original data"}
+    # "GDP" = "#2bdfff", 
+    # "Interest rate" = "#2b8bff",
+    # "Household spendings" = "#8eff2b",
+    # "Household investments" = "#067500",
+    # "Number of permits" = "#f52707",
+    # "Population < 20 y.o." = "#f569e9",
+    # "Population 20-59 y.o." = "#f507cd",
+    # "Population > 60 y.o." = "#70006e"
+# Plots
+Xydata %>% 
+    ggplot(aes(y = rTNL, x = t, col = "Number of permits")) + 
+    geom_path() + 
+    geom_path(aes(y = rFBCFmen, x = t, 
+        col = "Household investments")) + 
+    geom_path(aes(y = rDCFmen, x = t, 
+        col = "Household expenditure")) +
+    geom_path(aes(y = rTdI, x = t, 
+        col = "Interest rate")) +
+    geom_path(aes(y = rGDP, x = t, 
+        col = "GDP"), col = "#2bdfff") +
+    geom_segment(aes(x = 1995, y = 0, xend = 1995, yend = 2, 
+        col = "Presidential change")) +
+    geom_segment(aes(x = 2007, y = 0, xend = 2007, yend = 2, 
+        col = "Presidential change")) +
+    geom_segment(aes(x = 2012, y = 0, xend = 2012, yend = 2, 
+        col = "Presidential change")) +
+    geom_segment(aes(x = 2017, y = 0, xend = 2017, yend = 2, 
+        col = "Presidential change")) +
+    geom_segment(aes(x = 1995, y = 0, xend = 1995, yend = 2, 
+        col = "Political border change"),
+        linetype="dotted",
+        size = 3) +
+    geom_segment(aes(x = 2012, y = 0, xend = 2012, yend = 2, 
+        col = "Political border change"),
+        linetype="dotted",
+        size = 3) +
+    geom_segment(aes(x = 2017, y = 0, xend = 2017, yend = 2, 
+        col = "Political border change"),
+        linetype="dotted",
+        size = 3) +
+    xlab("Index") + ylab("Year") +
+    theme(text = element_text(size = 7))
+```
+
+\FloatBarrier
+
+## Different housing types
+
+```{r include = FALSE}
+ydataX = read.csv("../data/derived_data/df3.csv")[,-c(1:2)] %>%
+    dplyr::select(
+        T_NL = total_nombre_de_logements,
+        NL_pure = nombre_de_logements_autorises_individuels_purs,
+        NL_groupped = nombre_de_logements_autorises_individuels_groupes,
+        NL_collect = nombre_de_logements_autorises_collectifs,
+        NL_resid = nombre_de_logements_autorises_en_residence) 
+ydataX2 = ydataX %>%
+    mutate( 
+        T_NL = T_NL/ydataX[1,]$T_NL, 
+        NL_pure = NL_pure/ydataX[1,]$NL_pure, 
+        NL_groupped = NL_groupped/ydataX[1,]$NL_groupped, 
+        NL_collect = NL_collect/ydataX[1,]$NL_collect, 
+        NL_resid = NL_resid/ydataX[1,]$NL_resid)
+colnames(ydataX) = c("Total number",
+    "Detached", "Groupped", 
+    "Collectif", "Residence")
+colnames(ydataX2) = c("Total number",
+    "Detached", "Groupped", 
+    "Collectif", "Residence")
+ts_ydataX = ts(ydataX, start = 1994, frequency = 1)
+ts_ydataX2 = ts(ydataX2, start = 1994, frequency = 1)
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, resultats = "asis", fig.cap = "Construction permits by housing type"}
+ts_ydataX %>% 
+    autoplot() +
+    scale_colour_manual(values = c(
+        "Total number" = "red",
+        "Detached" = "green", 
+        "Groupped" = "green4", 
+        "Collectif" = "blue", 
+        "Residence" = "black"))
+```
+
+\FloatBarrier
+
+## Transformed data for different housing types
+
+\FloatBarrier
+
+```{r echo = FALSE, resultats = "asis", fig.cap = "Construction permits by housing type, index"}
+ts_ydataX2 %>% 
+    autoplot() +
+    scale_colour_manual(values = c(
+        "Total number" = "red",
+        "Detached" = "green", 
+        "Groupped" = "green4", 
+        "Collectif" = "blue", 
+        "Residence" = "black"))
+```
+
+\FloatBarrier
+
+# Data analysis 
+
+## Analysis
+
+We are going to procede in this section as follows :
+
+- Cross-corelation study,
+- Autocorrelation study,
+- Partial autocorrelation study.
+
+This analysis will be effectuated over the integrity of variables.
+
+## Cross-correlation study
+
+In order to verify stationarity we use the following tests :
+
+- augmented Dickey-Fuller test (ADF), which makes it possible to test the hypothesis of the non-stationarity of a time series;
+- Kwiatkowski-Phillips-Schmidt-Shin test (KPSS) to check stationarity on trend (KPSS-T) or level (KPSS-L).
+
+These two tests allow us to verify the hypothesis of the stationarity of the series studied and, if necessary, correct it by applying a transformation on the series in question.
+
+## Stationarity tests 
+
+```{r include = FALSE}
+# Testing
+ftest = data.frame("ADF" = NA, "KPSS-T" = NA, "KPSS-L" = NA)
+# ADF test
+for (i in 2:(ncol(tr_ydata))) {
+    ftest[i-1, 1] = adf.test(na.omit(tr_ydata[,i]))$p.val
+}
+for (i in 2:(ncol(tr_ydata))) {
+    ftest[i-1, 2] = kpss.test(na.omit(tr_ydata[,i]),
+        null = "Trend")$p.val
+}
+for (i in 2:(ncol(tr_ydata))) {
+    ftest[i-1, 3] = kpss.test(na.omit(tr_ydata[,i]),
+        null = "Level")$p.val
+}
+rownames(ftest) = c(
+        "GDP",
+        "Interest rate",
+        "Household spendings",
+        "Household investments",
+        "Number of permits",
+        "Population < 20 y.o.",
+        "Population 20-59 y.o.",
+        "Population > 60 y.o.")
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Results
+print(xtable(ftest,
+    caption = "Stationarity tests, p-values"),
+    caption.placement = "bottom")
+```
+
+\FloatBarrier
+
+## Differenced data
+
+```{r include = FALSE}
+# Data transformation
+tr_ydata_diff = diff(tr_ydata)
+str_ydata_diff = diff(str_ydata)
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Differenced time series"}
+# Plots
+str_ydata_diff[, -1] %>% 
+    autoplot(facets = FALSE, cex = 0.5) + 
+    theme(text = element_text(size = 7)) +
+    scale_colour_manual(values = c(
+        "GDP" = "#2bdfff", 
+        "Interest rate" = "#2b8bff",
+        "Household spendings" = "#8eff2b",
+        "Household investments" = "#067500",
+        "Number of permits" = "#f52707",
+        "Population < 20 y.o." = "#f569e9",
+        "Population 20-59 y.o." = "#f507cd",
+        "Population > 60 y.o." = "#70006e"))
+```
+
+\FloatBarrier
+
+## Stationarity reverification
+
+```{r include = FALSE}
+# Testing
+ftest_diff = data.frame("ADF" = NA, "KPSS-T" = NA, "KPSS-L" = NA)
+# ADF test
+for (i in 2:(ncol(str_ydata_diff))) {
+    ftest_diff[i-1, 1] = adf.test(na.omit(str_ydata_diff[-1,i]))$p.val
+}
+for (i in 2:(ncol(str_ydata_diff))) {
+    ftest_diff[i-1, 2] = kpss.test(na.omit(str_ydata_diff[-1,i]),
+        null = "Trend")$p.val
+}
+for (i in 2:(ncol(str_ydata_diff))) {
+    ftest_diff[i-1, 3] = kpss.test(na.omit(str_ydata_diff[-1,i]),
+        null = "Level")$p.val
+}
+rownames(ftest_diff) = c(
+        "GDP",
+        "Interest rate",
+        "Household spendings",
+        "Household investments",
+        "Number of permits",
+        "Population < 20 y.o.",
+        "Population 20-59 y.o.",
+        "Population > 60 y.o.")
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Results
+print(xtable(ftest_diff,
+    caption = "Stationarity tests, p-values"),
+    caption.placement = "bottom")
+```
+
+\FloatBarrier
+
+## Cross-correlation study
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Cross-correlation"}
+# Data choice
+par(mfrow = c(2,2), cex = 0.4)
+ccf(str_ydata_diff[-1,2], str_ydata_diff[-1,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "GDP",
+    ylab = "Cross-correlation",
+    ylim = c(-1,1),
+    cex = 0.3)
+ccf(str_ydata_diff[-1,3], str_ydata_diff[-1,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Interest rate",
+    ylab = "Cross-correlation",
+    ylim = c(-1,1),
+    cex = 0.3,
+    na.action = na.pass)
+ccf(str_ydata_diff[-1,4], str_ydata_diff[-1,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Household spendings",
+    ylab = "Cross-correlation",
+    ylim = c(-1,1),
+    cex = 0.3)
+ccf(str_ydata_diff[-1,5], str_ydata_diff[-1,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Household investments",
+    ylab = "Cross-correlation",
+    ylim = c(-1,1),
+    cex = 0.3)
+```
+
+\FloatBarrier
+
+## Autocorrelation
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Autocorrelation"}
+# Data choice
+par(mfrow = c(2,2), cex = 0.4)
+acf(str_ydata_diff[-1,2], 
+    main = "GDP",
+    ylim = c(-1,1),
+    cex = 0.3)
+acf(str_ydata_diff[-1,3], 
+    main = "Interest rate",
+    ylim = c(-1,1),
+    cex = 0.3,
+    na.action = na.pass)
+acf(str_ydata_diff[-1,4],
+    main = "Household spendings",
+    ylim = c(-1,1),
+    cex = 0.3)
+acf(str_ydata_diff[-1,5], 
+    main = "Household investments",
+    ylim = c(-1,1),
+    cex = 0.3)
+```
+
+## Partial autocorrelation
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Partial autocorrelation"}
+# Data choice
+par(mfrow = c(2,2), cex = 0.4)
+pacf(str_ydata_diff[-1,2], 
+    main = "GDP",
+    ylim = c(-1,1),
+    cex = 0.3)
+pacf(str_ydata_diff[-1,3], 
+    main = "Interest rate",
+    ylim = c(-1,1),
+    cex = 0.3,
+    na.action = na.pass)
+pacf(str_ydata_diff[-1,4],
+    main = "Household spendings",
+    ylim = c(-1,1),
+    cex = 0.3)
+pacf(str_ydata_diff[-1,5], 
+    main = "Household investments",
+    ylim = c(-1,1),
+    cex = 0.3)
+```
+
+\FloatBarrier
+
+# Modelisation 
+
+```{r include = FALSE}
+##############
+# Linear model 
+##############
+```
+
+## Different models
+
+- Simple linear models (OLS),
+- Time series models (ARIMA),
+- Adcanced time series vector models (VAR),
+- Alternative linear models, accounting for causality effects.
+
+## Model comparison
+
+\tiny
+\begin{table}[H]
+\begin{tabular}{p{2cm} | p{4cm} | p{4cm}}
+\hline \\[-1.8ex]
+Model & 
+    Advantages & 
+        Disadvantages \\
+\hline
+OLS & 
+    Simple to implement & 
+        Unable to predict future values without acces to exogenous variables values in future \\
+\hline
+ARIMA & 
+    Relatively simple  
+    Allows to predict future values for several periods &
+        \makecell{Does not take into account supplimentary information \\
+        Requires stationary time series data} \\
+\hline
+VAR & 
+    Even longer prediction horizon & 
+        \makecell{Multiple restriction on data structure : \\
+        - Stationarity, \\
+        - No cointegration.} \\
+\hline
+OLS and causality & 
+    \makecell{Gives predictions for short intervals (1 or 2 periods) \\
+    No limiting restrictions on the data used} &
+        Only short-term predictions are possible \\
+\hline
+\end{tabular}
+\normalsize
+\caption{Different models' specification}
+\end{table}
+
+# Linear models
+
+## OLS estimations 
+
+In this part we explore direct links between varibales without wausality imlications.
+
+```{r include = FALSE}
+# Formulas
+formulas = list()
+formulas[[1]] = rTNL ~ rGDP
+formulas[[2]] = rTNL ~ rGDP + rTdI
+formulas[[3]] = rTNL ~ rGDP + rDCFmen + rFBCFmen
+formulas[[4]] = rTNL ~ rGDP + rDCFmen + rFBCFmen + rTdI
+formulas[[5]] = rTNL ~ rGDP + rDCFmen + rFBCFmen + rTdI + t
+``` 
+
+```{r include = FALSE}
+# Modélisation OLS
+ols = list()
+ols[[1]] = lm(formulas[[1]], r_ydata)
+ols[[2]] = lm(formulas[[2]], r_ydata)
+ols[[3]] = lm(formulas[[3]], r_ydata)
+ols[[4]] = lm(formulas[[4]], r_ydata)
+ols[[5]] = lm(formulas[[5]], r_ydata)
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Resultats
+texreg(float.pos = "!htbp", 
+    ols, 
+    custom.coef.map = list(
+        "rGDP" = "GDP",
+        "rTdI" = "Interest rate",
+        "rDCFmen" = "Household spendings",
+        "rFBCFmen" = "Household investments",
+        "t" = "Time"),
+    caption = "OLS models comparison")
+```
+
+\FloatBarrier 
+
+# Time series 
+
+```{r include = FALSE}
+####################
+# Time series models 
+####################
+```
+
+## Time series presentation
+
+```{r include = FALSE}
+# Resultats
+tsTNL = diff(ts(r_ydata$rTNL, start = 1994, frequency = 1))
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Descriptive graphics"}
+# Graphiques 
+tsTNLX = tsTNL
+p1 = autoplot(tsTNL, cex = 0.5) + 
+    ylab("First differences") + 
+    theme(text = element_text(size = 5)) + 
+    ggtitle("Building permits number")
+tsTNLd = diff(tsTNL, lag = 1, difference = 1)
+p2 = autoplot(tsTNLd, cex = 0.5) + 
+    ylab("Second differences") + 
+    theme(text = element_text(size = 5)) + 
+    ggtitle("Building permits number")
+p3 = ggAcf(tsTNLX, cex = 0.5) +
+        ggtitle("ACF") +
+        xlab("Lag") + 
+    theme(text = element_text(size = 5))
+p4 = ggPacf(tsTNLX, cex = 0.5) +
+        ggtitle("PACF") +
+        xlab("Lag") + 
+    theme(text = element_text(size = 5))
+grid.arrange(p1, p2, p3, p4, nrow = 2)
+```
+
+\FloatBarrier
+
+## ARMA modelisation
+
+```{r include = FALSE}
+tsarma = list()
+tsarma[[1]] = arima(tsTNL, order = c(1, 0, 0))
+tsarma[[2]] = arima(tsTNL, order = c(0, 0, 1))
+tsarma[[3]] = arima(tsTNL, order = c(1, 0, 1))
+tsarma[[4]] = arima(tsTNL, order = c(1, 0, 2))
+tsarma[[5]] = arima(tsTNL, order = c(2, 0, 2))
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Resultats
+texreg(float.pos = "!htbp", 
+    tsarma, 
+    custom.coef.names = c(
+        "ar1" = "AR(1)", 
+        "ar2" = "AR(2)",
+        "Intercept" = "Intercept",
+        "ma1" = "MA(1)", 
+        "ma2" = "MA(2)"),
+    custom.model.names = c("ARMA(1,0)",
+        "ARMA(0,1)", "ARMA(1,1)", "ARMA(1,2)",
+        "ARMA(2,2)"),
+    caption = "Comparaison des modèles ARMA")
+```
+
+\FloatBarrier
+
+# Vector models
+
+```{r include = FALSE}
+####################
+# Time series models 
+####################
+```
+
+## VAR modelisation
+
+```{r include = FALSE}
+# # Data 
+# var_data = tr_ydata_diff[-nrow(tr_ydata_diff), -c(1)]
+# # Models 
+# tsvar = list()
+# tsvar[[1]] = VAR(var_data, p = 1, 
+#     type = "none")
+# tsvar[[2]] = VAR(var_data, p = 2, 
+#     type = "none")
+```
+
+\FloatBarrier
+
+```{r echo = FALSE, results = "asis"}
+# Resultats
+# texreg(float.pos = "!htbp", 
+#     tsvar[[1]]$varres, 
+#     custom.coef.names = c(
+#         "rGDP.l1" = "GDP(-1)", 
+#         "rTdI.l1" = "I Rate(-1)",
+#         "rDCFmen.l1" = "DCF(-1)",
+#         "rFBCFmen.l1" = "FBFC(-1)", 
+#         "rTNL.l1" = "N Permits(-1)",
+#         "rmoins20.l1" = "< 20(-1)",
+#         "rmid2059.l1" = "20-59(-1)"),
+#     custom.model.names = c(
+#         "GDP",
+#         "I Rate",
+#         "DCF",
+#         "FBFC",
+#         "N Permits",
+#         "< 20", 
+#         "20-59",
+#         "> 60"),
+#     caption = "VAR(1) results")
+```
+
+\FloatBarrier
+
+# Alternatives
+
+## Review of cross-correlations, part 1
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Cross-correlation"}
+# Data choice
+par(mfrow = c(2,2), cex = 0.4)
+ccf(str_ydata[-1,2], str_ydata[-1,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "GDP",
+    ylab = "Cross-correlation",
+    ylim = c(-1,1),
+    cex = 0.3)
+ccf(str_ydata[-1,3], str_ydata[-1,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Interest rate",
+    ylab = "Cross-correlation",
+    ylim = c(-1,1),
+    cex = 0.3,
+    na.action = na.pass)
+ccf(str_ydata[-1,4], str_ydata[-1,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Household spendings",
+    ylab = "Cross-correlation",
+    ylim = c(-1,1),
+    cex = 0.3)
+ccf(str_ydata[-1,5], str_ydata[-1,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Household investments",
+    ylab = "Cross-correlation",
+    ylim = c(-1,1),
+    cex = 0.3)
+```
+
+\FloatBarrier
+
+## Review of cross-correlations, part 2
+
+\FloatBarrier
+
+```{r echo = FALSE, fig.cap = "Cross-correlation"}
+# Data choice
+par(mfrow = c(2,2), cex = 0.4)
+ccf(str_ydata[-1,7], str_ydata[-1,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Population < 20",
+    ylab = "Cross-correlation",
+    ylim = c(-1,1),
+    cex = 0.3)
+ccf(str_ydata[-1,8], str_ydata[-1,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Population 20-59",
+    ylab = "Cross-correlation",
+    ylim = c(-1,1),
+    cex = 0.3,
+    na.action = na.pass)
+ccf(str_ydata[-1,9], str_ydata[-1,6], 
+    lag.max = 5,
+    type = "correlation",
+    main = "Populqtion > 60",
+    ylab = "Cross-correlation",
+    ylim = c(-1,1),
+    cex = 0.3)
+```
+
+\FloatBarrier
+
+# Conclusion 
+
+## Proceedings 
+
+- Separate study of different permits types,
+- Alternative linear regression implementation (that is similar to ARDL),
+- Study of trimestrial data,
+- Rapport finalisation,
+- Delivrables preparation :
+    - Excel automated model, 
+    - Final rapport, 
+    - R code organisation,
+    - Database documentation.
